@@ -3,10 +3,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0;
-}
-
 main {
     display: block;
 }
@@ -182,3 +178,11 @@ p {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
