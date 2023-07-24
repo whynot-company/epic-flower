@@ -20,7 +20,8 @@ async function fetchProductData() {
             titleElement.textContent = title;
             priceElement.textContent = price;
 
-            productCard.classList.add('text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3');
+            productContainer.classList.add('relative');
+            productCard.classList.add('absolute' ,'text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3');
             imageElement.classList.add('pb-6');
             titleElement.classList.add('w-52', 'font-normal', 'text-xl', 'pb-7', 'ml-5');
             priceElement.classList.add('font-semibold', 'text-2xl', 'ml-4');
@@ -47,7 +48,7 @@ async function fetchProductData() {
                 button.classList.add('rounded-full', 'bg-black', 'text-white', 'p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
                 fastLink.classList.add('font-normal', 'text-lg', 'text-black');
                 priceElement.classList.add('pb-2');
-                productCard.classList.add('z-50', 'relative', 'transition', 'transform', 'duration-700', 'hover:translate-y-6', 'hover:shadow-lg');
+                productCard.classList.add('z-30');
 
                 container.appendChild(button);
                 container.appendChild(fastLink);
@@ -65,7 +66,7 @@ async function fetchProductData() {
                 button.classList.remove('rounded-full', 'bg-black', 'text-white', 'p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
                 fastLink.classList.remove('font-normal', 'text-lg', 'text-black');
                 priceElement.classList.remove('pb-2');
-                productCard.classList.remove('z-50', 'relative', 'transition', 'transform', 'duration-700', 'hover:translate-y-6', 'hover:shadow-lg');
+                productCard.classList.remove('z-30');
 
                 container.remove();
             });
