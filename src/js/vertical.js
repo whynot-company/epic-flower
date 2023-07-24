@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Запускаємо автоматичне переключення слайдів кожні 3 секунди
-    setInterval(showNextSlides, 3000);
+    // setInterval(showNextSlides, 3000);
 
     // Обробник події для кнопки "Наступний"
     const nextBtn = document.querySelector('.next-btn');
