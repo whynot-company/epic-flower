@@ -20,8 +20,7 @@ async function fetchProductData() {
             titleElement.textContent = title;
             priceElement.textContent = price;
 
-            productContainer.classList.add('relative');
-            productCard.classList.add('absolute' ,'text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3');
+            productCard.classList.add('text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3');
             imageElement.classList.add('pb-6');
             titleElement.classList.add('w-52', 'font-normal', 'text-xl', 'pb-7', 'ml-5');
             priceElement.classList.add('font-semibold', 'text-2xl', 'ml-4');
