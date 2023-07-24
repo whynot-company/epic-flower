@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+    <div class="fixed z-40 pt-24 left-0 top-0 w-full h-full overflow-auto bg-slate-900 bg-opacity-70 hidden" id="search">
+        <div class="flex justify-center relative p-36">
+            <div class="flex gap-5 items-center text-center border-b-2 border-b-white pb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#87A7BE" class="w-9 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg> 
+                <input class="bg-transparent text-white font-sans font-normal text-xl border-none w-[800px] placeholder:border-none placeholder:text-white" type="text" placeholder="Знайти">
+            </div>
+            <button class="absolute right-28 top-0 float-right" id="closeSearch">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.9126 30.5876C32.0047 30.6734 32.0785 30.7769 32.1298 30.8919C32.181 31.0069 32.2086 31.131 32.2108 31.2569C32.213 31.3828 32.1899 31.5078 32.1427 31.6245C32.0956 31.7413 32.0254 31.8473 31.9364 31.9364C31.8473 32.0254 31.7413 32.0956 31.6245 32.1427C31.5078 32.1899 31.3828 32.213 31.2569 32.2108C31.131 32.2086 31.0069 32.181 30.8919 32.1298C30.7769 32.0785 30.6734 32.0047 30.5876 31.9126L20.0001 21.3266L9.41255 31.9126C9.23483 32.0782 8.99978 32.1683 8.7569 32.164C8.51402 32.1597 8.28229 32.0613 8.11052 31.8896C7.93876 31.7178 7.84037 31.4861 7.83608 31.2432C7.8318 31.0003 7.92195 30.7653 8.08755 30.5876L18.6735 20.0001L8.08755 9.41255C7.92195 9.23483 7.8318 8.99978 7.83608 8.7569C7.84037 8.51402 7.93876 8.28229 8.11052 8.11052C8.28229 7.93876 8.51402 7.84037 8.7569 7.83608C8.99978 7.8318 9.23483 7.92195 9.41255 8.08755L20.0001 18.6735L30.5876 8.08755C30.7653 7.92195 31.0003 7.8318 31.2432 7.83608C31.4861 7.84037 31.7178 7.93876 31.8896 8.11052C32.0613 8.28229 32.1597 8.51402 32.164 8.7569C32.1683 8.99978 32.0782 9.23483 31.9126 9.41255L21.3266 20.0001L31.9126 30.5876Z" fill="#87A7BE"/>
+                </svg>                
+            </button>
+        </div>
+    </div>
+
     <!-- Header start -->
     <div class="bg-blue-300 text-center items-center">
         <p class="text-xl font-bold text-white py-4">Ми працюємо з 08:00 до 21:00 щодня.</p>
     </div>
     <header class="mt-10">
-        <div class="flex justify-center">
+        <div class="flex justify-center pl-[8%]">
             <div class="flex justify-between items-center text-center">
-                <div class="pr-40 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-6 absolute cursor-pointer">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>                      
-                    <input class="border border-black rounded-3xl py-2 px-10 placeholder:relative w-56" type="text" placeholder="Search...">
+                <div class="pr-48 flex gap-2 items-center text-center">
+                    <div class="flex gap-2 font-sans font-medium text-xl items-center">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.7837 3.45937C4.47812 2.75974 5.30406 2.20434 6.21397 1.82517C7.12389 1.44599 8.09981 1.25052 9.08557 1.25C11.0731 1.25 12.9806 2.04375 14.3874 3.45937C15.7964 4.87885 16.5866 6.79809 16.5856 8.79812C16.5856 12.2519 14.6706 15.3781 12.6756 17.6863C11.8349 18.6542 10.9234 19.5584 9.9487 20.3913C9.66688 20.633 9.37908 20.8676 9.08557 21.095C8.79218 20.8675 8.50439 20.6328 8.22245 20.3913C7.24774 19.5584 6.33628 18.6542 5.49557 17.6863C3.50057 15.3781 1.58557 12.2519 1.58557 8.79812C1.58557 6.795 2.37682 4.875 3.7837 3.45937ZM8.72557 22.3856L9.08557 21.875L9.44557 22.3856C9.34014 22.4597 9.21442 22.4994 9.08557 22.4994C8.95672 22.4994 8.83101 22.4597 8.72557 22.3856ZM8.72557 22.3856L9.08557 21.875L9.44557 22.3856L9.44807 22.3844L9.45432 22.38L9.47307 22.3656L9.54682 22.3125C9.60932 22.2663 9.70057 22.1987 9.81557 22.11C10.0456 21.9338 10.3718 21.6744 10.7612 21.3412C11.7833 20.4676 12.7391 19.5191 13.6206 18.5037C15.6881 16.1125 17.8356 12.6994 17.8356 8.7975C17.8356 6.46625 16.9143 4.22875 15.2743 2.57875C14.4637 1.76212 13.4996 1.11387 12.4375 0.671297C11.3754 0.228729 10.2362 0.00058646 9.08557 0C7.93498 0.00050459 6.79584 0.228549 5.73373 0.671009C4.67161 1.11347 3.70748 1.76161 2.89682 2.57812C1.25521 4.2319 0.334469 6.46792 0.335572 8.79812C0.335572 12.6994 2.48307 16.1125 4.55057 18.5037C5.43205 19.5191 6.38781 20.4676 7.40995 21.3412C7.79995 21.6744 8.12557 21.9338 8.35557 22.11C8.46838 22.1969 8.58235 22.2824 8.69745 22.3662L8.71745 22.38L8.72307 22.3844L8.72557 22.3856ZM6.58557 8.75C6.58557 8.08696 6.84896 7.45107 7.31781 6.98223C7.78665 6.51339 8.42253 6.25 9.08557 6.25C9.74861 6.25 10.3845 6.51339 10.8533 6.98223C11.3222 7.45107 11.5856 8.08696 11.5856 8.75C11.5856 9.41304 11.3222 10.0489 10.8533 10.5178C10.3845 10.9866 9.74861 11.25 9.08557 11.25C8.42253 11.25 7.78665 10.9866 7.31781 10.5178C6.84896 10.0489 6.58557 9.41304 6.58557 8.75ZM9.08557 5C8.09101 5 7.13718 5.39509 6.43392 6.09835C5.73066 6.80161 5.33557 7.75544 5.33557 8.75C5.33557 9.74456 5.73066 10.6984 6.43392 11.4017C7.13718 12.1049 8.09101 12.5 9.08557 12.5C10.0801 12.5 11.034 12.1049 11.7372 11.4017C12.4405 10.6984 12.8356 9.74456 12.8356 8.75C12.8356 7.75544 12.4405 6.80161 11.7372 6.09835C11.034 5.39509 10.0801 5 9.08557 5Z" fill="#111111"/>
+                        </svg>
+                        Київ
+                    </div>
+                    <button class="cursor-pointer" id="openSearch">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>                      
+                    </button>
                 </div>
                 <div class="pr-40">
                     <a href="./index.html">
@@ -51,19 +75,19 @@
     <nav class="flex justify-center items-center pt-14 pb-8">
         <ul class="flex items-center text-center">
             <li class="pr-16">
-                <a href="#!" class="text-red-600 font-bold text-lg uppercase">акції</a>
+                <a href="./pages/discount.html" class="text-red-600 font-bold text-lg uppercase">акції</a>
             </li>
             <li class="pr-16">
-                <a href="./pages/products.html" class="font-semibold text-lg uppercase">квіти</a>
+                <a href="./pages/products.html" class="font-semibold text-lg uppercase text-gray-300">квіти</a>
             </li>
             <li class="pr-16">
-                <a href="./pages/about_us.html" class="font-semibold text-lg uppercase">про нас</a>
+                <a href="./pages/about_us.html" class="font-semibold text-lg uppercase text-gray-300">про нас</a>
             </li>
             <li class="pr-16">
-                <a href="#footer" class="font-semibold text-lg uppercase">контакти</a>
+                <a href="#footer" class="font-semibold text-lg uppercase text-gray-300">контакти</a>
             </li>
             <li class="pr-16">
-                <a href="pages/delivery.html" class="font-semibold text-lg uppercase">доставка і оплата</a>
+                <a href="pages/delivery.html" class="font-semibold text-lg uppercase text-gray-300">доставка і оплата</a>
             </li>
         </ul>
     </nav>
@@ -72,18 +96,156 @@
     <!-- Header end -->
 
     <!-- Hero section start -->
-    <section class="bg-[url('./images/banners/banner-1.jpg')] items-center text-center bg-center bg-no-repeat bg-cover min-h-full ">
-        <div class="w-2/5 my-0 mx-auto bg-white bg-opacity-40 blur-sm z-10">
-            <!-- <div class="z-50">
-                <div class="">
-                    <h1 class="font-normal text-6xl uppercase">
-                        бестселери
-                    </h1>
+    <section class="bg-[url('./images/banners/banner-2.jpg')] items-center text-center bg-center bg-no-repeat bg-cover min-h-full ">
+        <div class="flex justify-center gap-24">
+            <div class="flex flex-col gap-10 text-white w-1/3 text-left pt-[15%]">
+                <div>
+                    <h1 class="font-bold text-5xl pb-10 font-sans">Кожен букет з любов’ю зібрано для вас</h1>
+                    <h3 class="font-semibold text-3xl">Замовляйте сьогодні</h3>
                 </div>
-            </div> -->
+                <button class="rounded-full w-80 py-4 bg-slate-800">
+                    <a class="font-medium text-xl" href="./pages/products.html">
+                        До каталогу
+                    </a>
+                </button>
+            </div>
+            <div class="flex flex-col gap-9 text-white text-left">
+                <div>
+                    <h2 class="font-semibold text-4xl pt-4 pb-2">Акційні пропозиції</h2>
+                    <div class="slider-container overflow-hidden flex gap-10">
+                        <div class="slider flex flex-col gap-7">
+                            <div class="slide gap-7 p-5 bg-white hidden">
+                                <img src="./images/flowers/Rectangle 27 (1).jpg" alt="">
+                                <div>
+                                    <h4 class="font-sans font-normal text-2xl text-black text-left pb-6">Букет 25 Рожевих <br> піонів Мікс</h4>
+                                    <div class="flex gap-3 items-center pb-6">
+                                        <p class="text-gray-300 line-through font-sans font-normal text-lg">1 289 UAH</p>
+                                        <p class="font-sans font-semibold text-2xl text-orange-600">1 031 UAH</p>
+                                    </div>
+                                    <button class="flex gap-2 bg-orange-700 text-white items-center py-5 px-7 rounded-full">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.5938 4.10156H4.40625C4.04365 4.10156 3.6959 4.24561 3.4395 4.502C3.18311 4.7584 3.03906 5.10615 3.03906 5.46875V19.5312C3.03906 19.8939 3.18311 20.2416 3.4395 20.498C3.6959 20.7544 4.04365 20.8984 4.40625 20.8984H21.5938C21.9564 20.8984 22.3041 20.7544 22.5605 20.498C22.8169 20.2416 22.9609 19.8939 22.9609 19.5312V5.46875C22.9609 5.10615 22.8169 4.7584 22.5605 4.502C22.3041 4.24561 21.9564 4.10156 21.5938 4.10156ZM4.40625 5.27344H21.5938C21.6455 5.27344 21.6952 5.29401 21.7319 5.33064C21.7685 5.36727 21.7891 5.41695 21.7891 5.46875V7.22656H4.21094V5.46875C4.21094 5.41695 4.23151 5.36727 4.26814 5.33064C4.30477 5.29401 4.35445 5.27344 4.40625 5.27344ZM21.5938 19.7266H4.40625C4.35445 19.7266 4.30477 19.706 4.26814 19.6694C4.23151 19.6327 4.21094 19.583 4.21094 19.5312V8.39844H21.7891V19.5312C21.7891 19.583 21.7685 19.6327 21.7319 19.6694C21.6952 19.706 21.6455 19.7266 21.5938 19.7266ZM17.4922 10.9375C17.4922 12.1289 17.0189 13.2715 16.1765 14.114C15.334 14.9564 14.1914 15.4297 13 15.4297C11.8086 15.4297 10.666 14.9564 9.82354 14.114C8.9811 13.2715 8.50781 12.1289 8.50781 10.9375C8.50781 10.7821 8.56955 10.6331 8.67943 10.5232C8.78931 10.4133 8.93835 10.3516 9.09375 10.3516C9.24915 10.3516 9.39819 10.4133 9.50807 10.5232C9.61795 10.6331 9.67969 10.7821 9.67969 10.9375C9.67969 11.8181 10.0295 12.6626 10.6522 13.2853C11.2749 13.908 12.1194 14.2578 13 14.2578C13.8806 14.2578 14.7251 13.908 15.3478 13.2853C15.9705 12.6626 16.3203 11.8181 16.3203 10.9375C16.3203 10.7821 16.382 10.6331 16.4919 10.5232C16.6018 10.4133 16.7508 10.3516 16.9062 10.3516C17.0617 10.3516 17.2107 10.4133 17.3206 10.5232C17.4305 10.6331 17.4922 10.7821 17.4922 10.9375Z" fill="white"/>
+                                        </svg>
+                                        Додати
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide gap-7 p-5 bg-white hidden">
+                                <img src="./images/flowers/Rectangle 27 (1).jpg" alt="">
+                                <div>
+                                    <h4 class="font-sans font-normal text-2xl text-black text-left pb-6">Букет 25 Рожевих <br> піонів Мікс</h4>
+                                    <div class="flex gap-3 items-center pb-6">
+                                        <p class="text-gray-300 line-through font-sans font-normal text-lg">1 289 UAH</p>
+                                        <p class="font-sans font-semibold text-2xl text-orange-600">1 031 UAH</p>
+                                    </div>
+                                    <button class="flex gap-2 bg-orange-700 text-white items-center py-5 px-7 rounded-full">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.5938 4.10156H4.40625C4.04365 4.10156 3.6959 4.24561 3.4395 4.502C3.18311 4.7584 3.03906 5.10615 3.03906 5.46875V19.5312C3.03906 19.8939 3.18311 20.2416 3.4395 20.498C3.6959 20.7544 4.04365 20.8984 4.40625 20.8984H21.5938C21.9564 20.8984 22.3041 20.7544 22.5605 20.498C22.8169 20.2416 22.9609 19.8939 22.9609 19.5312V5.46875C22.9609 5.10615 22.8169 4.7584 22.5605 4.502C22.3041 4.24561 21.9564 4.10156 21.5938 4.10156ZM4.40625 5.27344H21.5938C21.6455 5.27344 21.6952 5.29401 21.7319 5.33064C21.7685 5.36727 21.7891 5.41695 21.7891 5.46875V7.22656H4.21094V5.46875C4.21094 5.41695 4.23151 5.36727 4.26814 5.33064C4.30477 5.29401 4.35445 5.27344 4.40625 5.27344ZM21.5938 19.7266H4.40625C4.35445 19.7266 4.30477 19.706 4.26814 19.6694C4.23151 19.6327 4.21094 19.583 4.21094 19.5312V8.39844H21.7891V19.5312C21.7891 19.583 21.7685 19.6327 21.7319 19.6694C21.6952 19.706 21.6455 19.7266 21.5938 19.7266ZM17.4922 10.9375C17.4922 12.1289 17.0189 13.2715 16.1765 14.114C15.334 14.9564 14.1914 15.4297 13 15.4297C11.8086 15.4297 10.666 14.9564 9.82354 14.114C8.9811 13.2715 8.50781 12.1289 8.50781 10.9375C8.50781 10.7821 8.56955 10.6331 8.67943 10.5232C8.78931 10.4133 8.93835 10.3516 9.09375 10.3516C9.24915 10.3516 9.39819 10.4133 9.50807 10.5232C9.61795 10.6331 9.67969 10.7821 9.67969 10.9375C9.67969 11.8181 10.0295 12.6626 10.6522 13.2853C11.2749 13.908 12.1194 14.2578 13 14.2578C13.8806 14.2578 14.7251 13.908 15.3478 13.2853C15.9705 12.6626 16.3203 11.8181 16.3203 10.9375C16.3203 10.7821 16.382 10.6331 16.4919 10.5232C16.6018 10.4133 16.7508 10.3516 16.9062 10.3516C17.0617 10.3516 17.2107 10.4133 17.3206 10.5232C17.4305 10.6331 17.4922 10.7821 17.4922 10.9375Z" fill="white"/>
+                                        </svg>
+                                        Додати
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide gap-7 p-5 bg-white hidden">
+                                <img src="./images/flowers/Rectangle 27 (1).jpg" alt="">
+                                <div>
+                                    <h4 class="font-sans font-normal text-2xl text-black text-left pb-6">Букет 25 Рожевих <br> піонів Мікс</h4>
+                                    <div class="flex gap-3 items-center pb-6">
+                                        <p class="text-gray-300 line-through font-sans font-normal text-lg">1 289 UAH</p>
+                                        <p class="font-sans font-semibold text-2xl text-orange-600">1 031 UAH</p>
+                                    </div>
+                                    <button class="flex gap-2 bg-orange-700 text-white items-center py-5 px-7 rounded-full">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.5938 4.10156H4.40625C4.04365 4.10156 3.6959 4.24561 3.4395 4.502C3.18311 4.7584 3.03906 5.10615 3.03906 5.46875V19.5312C3.03906 19.8939 3.18311 20.2416 3.4395 20.498C3.6959 20.7544 4.04365 20.8984 4.40625 20.8984H21.5938C21.9564 20.8984 22.3041 20.7544 22.5605 20.498C22.8169 20.2416 22.9609 19.8939 22.9609 19.5312V5.46875C22.9609 5.10615 22.8169 4.7584 22.5605 4.502C22.3041 4.24561 21.9564 4.10156 21.5938 4.10156ZM4.40625 5.27344H21.5938C21.6455 5.27344 21.6952 5.29401 21.7319 5.33064C21.7685 5.36727 21.7891 5.41695 21.7891 5.46875V7.22656H4.21094V5.46875C4.21094 5.41695 4.23151 5.36727 4.26814 5.33064C4.30477 5.29401 4.35445 5.27344 4.40625 5.27344ZM21.5938 19.7266H4.40625C4.35445 19.7266 4.30477 19.706 4.26814 19.6694C4.23151 19.6327 4.21094 19.583 4.21094 19.5312V8.39844H21.7891V19.5312C21.7891 19.583 21.7685 19.6327 21.7319 19.6694C21.6952 19.706 21.6455 19.7266 21.5938 19.7266ZM17.4922 10.9375C17.4922 12.1289 17.0189 13.2715 16.1765 14.114C15.334 14.9564 14.1914 15.4297 13 15.4297C11.8086 15.4297 10.666 14.9564 9.82354 14.114C8.9811 13.2715 8.50781 12.1289 8.50781 10.9375C8.50781 10.7821 8.56955 10.6331 8.67943 10.5232C8.78931 10.4133 8.93835 10.3516 9.09375 10.3516C9.24915 10.3516 9.39819 10.4133 9.50807 10.5232C9.61795 10.6331 9.67969 10.7821 9.67969 10.9375C9.67969 11.8181 10.0295 12.6626 10.6522 13.2853C11.2749 13.908 12.1194 14.2578 13 14.2578C13.8806 14.2578 14.7251 13.908 15.3478 13.2853C15.9705 12.6626 16.3203 11.8181 16.3203 10.9375C16.3203 10.7821 16.382 10.6331 16.4919 10.5232C16.6018 10.4133 16.7508 10.3516 16.9062 10.3516C17.0617 10.3516 17.2107 10.4133 17.3206 10.5232C17.4305 10.6331 17.4922 10.7821 17.4922 10.9375Z" fill="white"/>
+                                        </svg>
+                                        Додати
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide gap-7 p-5 bg-white hidden">
+                                <img src="./images/flowers/Rectangle 27 (1).jpg" alt="">
+                                <div>
+                                    <h4 class="font-sans font-normal text-2xl text-black text-left pb-6">Букет 25 Рожевих <br> піонів Мікс</h4>
+                                    <div class="flex gap-3 items-center pb-6">
+                                        <p class="text-gray-300 line-through font-sans font-normal text-lg">1 289 UAH</p>
+                                        <p class="font-sans font-semibold text-2xl text-orange-600">1 031 UAH</p>
+                                    </div>
+                                    <button class="flex gap-2 bg-orange-700 text-white items-center py-5 px-7 rounded-full">
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.5938 4.10156H4.40625C4.04365 4.10156 3.6959 4.24561 3.4395 4.502C3.18311 4.7584 3.03906 5.10615 3.03906 5.46875V19.5312C3.03906 19.8939 3.18311 20.2416 3.4395 20.498C3.6959 20.7544 4.04365 20.8984 4.40625 20.8984H21.5938C21.9564 20.8984 22.3041 20.7544 22.5605 20.498C22.8169 20.2416 22.9609 19.8939 22.9609 19.5312V5.46875C22.9609 5.10615 22.8169 4.7584 22.5605 4.502C22.3041 4.24561 21.9564 4.10156 21.5938 4.10156ZM4.40625 5.27344H21.5938C21.6455 5.27344 21.6952 5.29401 21.7319 5.33064C21.7685 5.36727 21.7891 5.41695 21.7891 5.46875V7.22656H4.21094V5.46875C4.21094 5.41695 4.23151 5.36727 4.26814 5.33064C4.30477 5.29401 4.35445 5.27344 4.40625 5.27344ZM21.5938 19.7266H4.40625C4.35445 19.7266 4.30477 19.706 4.26814 19.6694C4.23151 19.6327 4.21094 19.583 4.21094 19.5312V8.39844H21.7891V19.5312C21.7891 19.583 21.7685 19.6327 21.7319 19.6694C21.6952 19.706 21.6455 19.7266 21.5938 19.7266ZM17.4922 10.9375C17.4922 12.1289 17.0189 13.2715 16.1765 14.114C15.334 14.9564 14.1914 15.4297 13 15.4297C11.8086 15.4297 10.666 14.9564 9.82354 14.114C8.9811 13.2715 8.50781 12.1289 8.50781 10.9375C8.50781 10.7821 8.56955 10.6331 8.67943 10.5232C8.78931 10.4133 8.93835 10.3516 9.09375 10.3516C9.24915 10.3516 9.39819 10.4133 9.50807 10.5232C9.61795 10.6331 9.67969 10.7821 9.67969 10.9375C9.67969 11.8181 10.0295 12.6626 10.6522 13.2853C11.2749 13.908 12.1194 14.2578 13 14.2578C13.8806 14.2578 14.7251 13.908 15.3478 13.2853C15.9705 12.6626 16.3203 11.8181 16.3203 10.9375C16.3203 10.7821 16.382 10.6331 16.4919 10.5232C16.6018 10.4133 16.7508 10.3516 16.9062 10.3516C17.0617 10.3516 17.2107 10.4133 17.3206 10.5232C17.4305 10.6331 17.4922 10.7821 17.4922 10.9375Z" fill="white"/>
+                                        </svg>
+                                        Додати
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 pt-[53%]">
+                            <button class="prev-btn rounded-full w-2 h-2 bg-gray-300"></button>
+                            <button class="next-btn rounded-full w-2 h-2 bg-gray-300"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Hero section end -->
+
+    <section class="py-24">
+        <div class="items-center">
+            <div class="grid grid-cols-2 gap-6 px-5">
+                <a href="#!">
+                    <div class="bg-blue-300 text-white h-96 relative">
+                        <h4 class="font-sans font-medium text-3xl pt-[20%] pl-[10%] uppercase">Lorem ipsum dolor <br> sit amet</h4>
+                        <img src="./images/banners/Screenshot_20230428-103249 1.png" alt="image" class="absolute right-0 top-9 bottom-0">
+                    </div>
+                </a>
+                <a href="#!">
+                    <div class="bg-blue-300 text-white h-96 relative">
+                        <h4 class="font-sans font-medium text-3xl pt-[20%] pl-[10%] uppercase">Lorem ipsum dolor <br> sit amet</h4>
+                        <img src="./images/banners/Screenshot_20230428-103249 1.png" alt="image" class="absolute right-0 top-9 bottom-0">
+                    </div>
+                </a>
+                <a href="#!">
+                    <div class="bg-blue-300 text-white h-96 relative">
+                        <h4 class="font-sans font-medium text-3xl pt-[20%] pl-[10%] uppercase">Lorem ipsum dolor <br> sit amet</h4>
+                        <img src="./images/banners/Screenshot_20230428-103249 1.png" alt="image" class="absolute right-0 top-9 bottom-0">
+                    </div>
+                </a>
+                <a href="#!">
+                    <div class="bg-blue-300 text-white h-96 relative">
+                        <h4 class="font-sans font-medium text-3xl pt-[20%] pl-[10%] uppercase">Lorem ipsum dolor <br> sit amet</h4>
+                        <img src="./images/banners/Screenshot_20230428-103249 1.png" alt="image" class="absolute right-0 top-9 bottom-0">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-50">
+        <div class="flex gap-16">
+            <img src="./images/banners/Rectangle 69.jpg" alt="image" class="w-1/2">
+            <div class="py-24">
+                <h2 class="font-sans font-medium text-4xl pb-12">Унікальні букети для вас</h2>
+                <div class="flex flex-col gap-8 font-sans font-normal text-xl">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                        pretium quis, sem. Nulla consequat massa quis enim. 
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+                        pretium quis, sem. Nulla consequat massa quis enim. 
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Card slider start -->
     <section class="pt-24 text-center pb-28">
@@ -93,7 +255,7 @@
         <nav class="pb-12">
             <ul class="flex justify-center text-center">
                 <li class="pr-10">
-                    <a href="#!" class="font-medium text-xl text-pink-200">Букети</a>
+                    <a href="#!" class="font-medium text-xl text-orange-600">Букети</a>
                 </li>
                 <li class="pr-10">
                     <a href="#!" class="font-medium text-xl text-gray-400">Тюльпани</a>
@@ -110,28 +272,58 @@
             </ul>
         </nav>
         <div class="flex justify-center items-center text-center">
-            <button class="p-4 mr-3 rounded-full shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+            <button class="p-4 mr-3 rounded-full shadow-md" id="prevBtn">
+                <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                 </svg>
             </button>
-            <div class="flex justify-center items-center text-center">
-                <div class="text-center items-center mr-8">
+            <div class="flex justify-center gap-8 items-center text-center" id="sliderContainer">
+                <div class="text-center items-center">
                     <img alt="" class="pb-6" src="./images/flowers/Rectangle 27.jpg">
                     <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
                     <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
                 </div>
-                <div class="text-center items-center mr-8">
+                <div class="text-center items-center">
                     <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (1).jpg">
                     <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
                     <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
                 </div>
-                <div class="text-center items-center mr-8">
+                <div class="text-center items-center">
                     <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (2).jpg">
                     <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
                     <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
                 </div>
-                <div class="text-center items-center mr-8">
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27.jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (1).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (2).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
                     <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
                     <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
                     <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
@@ -142,7 +334,7 @@
                     <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
                 </div>
             </div>
-            <button class="p-4 ml-3 rounded-full shadow-md">
+            <button class="p-4 ml-3 rounded-full shadow-md" id="nextBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>                  
@@ -151,32 +343,39 @@
     </section>
     <!-- Card slider end -->
 
-    <!-- About us start -->
+    <!-- Fast search start -->
 
-    <section class="bg-pink-100 pb-40" id="about">
-        <div class="flex justify-center items-center gap-40 pt-40">
-            <div class="w-[600px]">
-                <p class="pb-14 font-normal text-base">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. 
-                    Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-                <img class="" src="./images/aboutUs/img (11).jpg" alt="images">
-            </div>
-            <div class="w-[600px]">
-                <img class="pb-14" src="./images/aboutUs/img (10).jpg" alt="images">
-                <p class="font-normal text-base">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                    Aenean commodo ligula eget dolor. 
-                    Aenean massa. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
+    <section class="bg-blue-50">
+        <div class="flex gap-16">
+            <img src="./images/banners/Rectangle 69 (1).jpg" alt="image" class="w-1/2">
+            <div class="py-24">
+                <h2 class="font-sans font-medium text-4xl pb-14">Швидкий підбір</h2>
+                <form>
+                    <select class="w-[640px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3" placeholder="E-mail">
+                        <option>Квітка</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    <select class="w-[640px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3" placeholder="E-mail">
+                        <option>Кому/привид</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    <select class="w-[640px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3" placeholder="E-mail">
+                        <option>Ціна</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    <button class="bg-slate-800 text-white font-sans font-medium text-xl w-[640px] text-center rounded-full p-4">Замовити</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- About us end -->
+    <!-- Fast search end -->
 
     <!-- Sale start -->
 
@@ -185,41 +384,69 @@
             Елітні композиції
         </h2>
         <div class="flex justify-center items-center text-center">
-            <button class="p-4 mr-3 rounded-full shadow-md" id="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+            <button class="p-4 mr-3 rounded-full shadow-md" id="prevBtn1">
+                <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                 </svg>
             </button>
-            <!-- <div class="w-5/6 my-12 mx-0"> -->
-                <div class="flex justify-center items-center text-center">
-                    <div class="text-center items-center mr-8">
-                        <img alt="" class="pb-6" src="./images/flowers/Rectangle 27.jpg">
-                        <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
-                        <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
-                    </div>
-                    <div class="text-center items-center mr-8">
-                        <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (1).jpg">
-                        <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
-                        <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
-                    </div>
-                    <div class="text-center items-center mr-8">
-                        <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (2).jpg">
-                        <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
-                        <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
-                    </div>
-                    <div class="text-center items-center mr-8">
-                        <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
-                        <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
-                        <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
-                    </div>
-                    <div class="text-center items-center">
-                        <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
-                        <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
-                        <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
-                    </div>
+            <div class="flex justify-center gap-8 items-center text-center" id="sliderContainer1">
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27.jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
                 </div>
-            <!-- </div> -->
-            <button class="p-4 ml-3 rounded-full shadow-md" id="next">
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (1).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (2).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27.jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (1).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (2).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+                <div class="text-center items-center">
+                    <img alt="" class="pb-6" src="./images/flowers/Rectangle 27 (3).jpg">
+                    <p class="w-52 font-normal text-xl pb-10 ml-5">Букет 25 Рожевих піонів Мікс</p>
+                    <p class="font-semibold text-2xl ml-4">1 289 UAH</p>
+                </div>
+            </div>
+            <button class="p-4 ml-3 rounded-full shadow-md" id="nextBtn1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>                  
@@ -229,62 +456,21 @@
 
     <!-- Sale end -->
 
-    <!-- Fast search start -->
-
-    <section class="bg-pink-100 pb-20">
-        <div class="pt-32 flex flex-col justify-center text-center items-center">
-            <div class="pb-14">
-                <h2 class="font-medium text-xl pb-4">
-                    Швидкий підбір
-                </h2>
-                <p class="font-normal text-lg">
-                    Швидкий підбір (ми підберемо вам ідеальний варіант)
-                </p>
-            </div>
-            <div>
-                <form class="flex items-center text-center">
-                    <select class="rounded-l-full p-6 border-r-2 border-black cursor-pointer">
-                        <option>Кому</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-                    <select class="p-6 border-r-2 border-black cursor-pointer">
-                        <option>Цветок</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-                    <select class="p-6 border-r-2 border-black cursor-pointer">
-                        <option>Бюджет</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-                    <input class="rounded-r-full bg-black text-white p-6 cursor-pointer" type="submit">       
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Fast search end -->
-
     <!-- FAQ start -->
 
-    <section class="pt-20 pb-20">
-        <div class="flex justify-center gap-20">
-            <img src="./images/FAQ/img (2).jpg" alt="images">
-            <div class="pt-14">
-                <h2 class="font-medium text-5xl pb-5">FAQ</h2>
+    <section class="bg-blue-50 mb-24">
+        <div class="flex gap-20">
+            <img src="./images/FAQ/img (2).jpg" alt="images" class="w-1/2">
+            <div class="pt-14 pr-10">
                 <div>
-                    <div class="relative">
-                        <div class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer" id="container">
+                    <div class="faq-container">
+                        <div class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer" >
                             <h4 class="font-normal text-lg">Як сплатити замовлення?</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
                         </div>
-                        <div class="hidden absolute min-w-[140px] z-10" id="content">
+                        <div class="answer hidden w-[600px]">
                             <p class="font-normal text-lg">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                                 Aenean massa. Cum sociis 
@@ -292,14 +478,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
+                    <div class="faq-container">
                         <div class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer">
                             <h4 class="font-normal text-lg">Як зробити замовлення? </h4>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>                          
                         </div>
-                        <div class="hidden absolute min-w-[160px] z-10">
+                        <div class="answer hidden w-[600px]">
                             <p class="font-normal text-lg">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                                 Aenean massa. Cum sociis 
@@ -307,14 +493,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
-                        <button onclick="toggleText()" class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer text-left" id="button">
+                    <div class="faq-container">
+                        <button class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer text-left" id="button">
                             <h4 class="font-normal text-lg">Чи можу я додати листівку?</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>                          
                         </button>
-                        <div class="hidden absolute min-w-[160px] z-10" id="content">
+                        <div class="answer hidden w-[600px]" id="content">
                             <p class="font-normal text-lg">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                                 Aenean massa. Cum sociis 
@@ -322,14 +508,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
+                    <div class="faq-container">
                         <div class="py-6 mb-5 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer">
                             <h4 class="font-normal text-lg">Чи можна зібрати індивідуальний букет?</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>                          
                         </div>
-                        <div class="hidden absolute min-w-[160px] z-10">
+                        <div class="answer hidden w-[600px]">
                             <p class="font-normal text-lg">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                                 Aenean massa. Cum sociis 
@@ -337,14 +523,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
-                        <div class="py-6 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer">
+                    <div class="faq-container">
+                        <div class="py-6 w-[690px] border-b-2 border-b-black relative items-center cursor-pointer" id="faq-container">
                             <h4 class="font-normal text-lg">Чи є можливість доставити букет без адреси отримувача?</h4>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>                          
                         </div>
-                        <div class="hidden absolute min-w-[160px] z-10">
+                        <div class="answer hidden w-[600px]">
                             <p class="font-normal text-lg">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                                 Aenean massa. Cum sociis 
@@ -367,7 +553,7 @@
                 <ul>
                     <li class="pb-5">
                         <a href="../index.html">
-                            <img src="../images/icons/logo-white.svg" alt="logo">
+                            <img src="./images/icons/logo-white.svg" alt="logo">
                         </a>
                     </li>
                     <li>
@@ -466,6 +652,7 @@
 </body>
 <script src="./js/FAQ.js"></script>
 <script src="./js/slider.js"></script>
-<script src="./js/catalog.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/vertical.js"></script>
 </html>
 

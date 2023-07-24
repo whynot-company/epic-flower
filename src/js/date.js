@@ -1,0 +1,1 @@
+document.getElementById('dataToday').valueAsDate = newDate();

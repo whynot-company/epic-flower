@@ -24,13 +24,15 @@ body {
 input[type=radio] {
     border: 1px solid black;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 12px;
     -webkit-appearance: none;
 }
 
 input[type=radio]:checked {
-    background: slategray;
-    background-size: 7px 7px;
+    background: gray;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background-size: 1px 1px;
 }
 
 input[type=radio]:focus {
@@ -40,4 +42,12 @@ input[type=radio]:focus {
 @font-face {
     font-family: 'Open sans';
     src: url(../fonts/FoglihtenNo06_076.otf);
+}
+
+.slide.active {
+    display: flex;
+}
+
+.active {
+    background-color: lightblue;
 }

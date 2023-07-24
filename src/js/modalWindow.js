@@ -13,7 +13,7 @@ openButton.onclick = function () {
     if (openForm.style.display = 'none') {
         openForm.style.display = 'block';
     }
-};
+}
 
 closs.onclick = function () {
     if (form.style.display = 'block') {
@@ -35,7 +35,7 @@ closs.onclick = function () {
 
 openBasket.onclick = function () {
     if (basket.style.display = 'none') {
-        basket.style.display = 'block' ;
+        basket.style.display = 'block';
     }
 }
 
@@ -47,4 +47,9 @@ closeBasket.onclick = function () {
 
 if (basket.style.display = 'none') {
     content.style.display = 'block';
-} 
+}
+
+
+
+
+
