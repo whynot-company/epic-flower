@@ -20,10 +20,10 @@ async function fetchProductData() {
             titleElement.textContent = title;
             priceElement.textContent = price;
 
-            productCard.classList.add('text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3');
-            imageElement.classList.add('pb-6');
-            titleElement.classList.add('w-52', 'font-normal', 'text-xl', 'pb-7', 'ml-5');
-            priceElement.classList.add('font-semibold', 'text-2xl', 'ml-4');
+            productCard.classList.add('text-center', 'items-center', 'mt-5', 'mb-14', 'cursor-pointer');
+            imageElement.classList.add('pb-6', 'w-[150px]', 'h-[164px]', 'xl:w-full', 'xl:h-full');
+            titleElement.classList.add('w-[150px]', 'xl:w-[220px]', 'font-sans', 'font-normal', 'text-base', 'xl:text-xl', 'pb-2', 'xl:pb-10', 'xl:ml-2');
+            priceElement.classList.add('font-semibold', 'text-lg', 'xl:text-2xl');
 
             // It`s I listen when mouse enter card product
             productCard.addEventListener('mouseenter', (e) => {

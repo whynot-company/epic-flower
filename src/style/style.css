@@ -22,16 +22,18 @@ body {
 }
 
 input[type=radio] {
-    border: 1px solid black;
+    border: 1px solid #87A7BE;
     border-radius: 5px;
-    padding: 12px;
+    width: 16px;
+    height: 16px;
+    padding: 5px;
     -webkit-appearance: none;
 }
 
 input[type=radio]:checked {
-    background: gray;
-    border: 1px solid gray;
-    border-radius: 100%;
+    background: #87A7BE;
+    border: 1px solid #87A7BE;
+    border-radius: 5px;
     background-size: 1px 1px;
 }
 
