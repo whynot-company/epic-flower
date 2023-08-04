@@ -50,3 +50,16 @@ input[type=radio]:focus {
     display: flex;
 }
 
+.menu.active {
+    left: 0;
+}
+
+.slider {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.elite-slides {
+    width: 90%;
+    margin: 0 auto;
+}
