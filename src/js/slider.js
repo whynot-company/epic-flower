@@ -35,10 +35,10 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 360,
+                breakpoint: 359,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             },
         ]
@@ -49,8 +49,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.elite-slides').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         responsive: [
             {
                 breakpoint: 1150,
@@ -81,10 +81,10 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 360,
+                breakpoint: 359,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             },
         ]

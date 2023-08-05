@@ -26,3 +26,6 @@ window.addEventListener('click', (e) => {
         closeModal();
     }
 });
+
+// JavaScript
+// Отримуємо посилання на кнопку відкриття модального вікна та на саме модальне вікно
