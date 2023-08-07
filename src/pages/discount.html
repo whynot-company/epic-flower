@@ -367,9 +367,32 @@
 
     <!-- Content -->
 
-    <section>
+    <section class="text-center pb-20">
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center items-center text-center pl-4" id="container-wrapper">
             <!-- You can see the content in the js file -->
+        </div>
+        <a href="#!" class="font-sans font-normal text-lg text-[#87A7BE] mb-6">Показати ще 16 товарів</a>
+        <div class="flex justify-center items-center">
+            <button class="button mr-7 prevNext" id="prev" disabled>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.2929 19.2929C13.9024 19.6834 13.9024 20.3166 14.2929 20.7071L20.6569 27.0711C21.0474 27.4616 21.6805 27.4616 22.0711 27.0711C22.4616 26.6805 22.4616 26.0474 22.0711 25.6569L16.4142 20L22.0711 14.3431C22.4616 13.9526 22.4616 13.3195 22.0711 12.9289C21.6805 12.5384 21.0474 12.5384 20.6569 12.9289L14.2929 19.2929ZM35 19L15 19V21L35 21V19Z" fill="#87A7BE"/>
+                </svg>
+            </button>
+            
+            <div class="links">
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl active">1</a>
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl">2</a>
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl">3</a>
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl">4</a>
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl">5</a>
+                <a href="#!" class="link mr-4 sm:mr-7 font-sans font-normal text-2xl">6</a>
+            </div>
+            
+            <button class="button prevNext" id="next">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.7071 19.2929C25.0976 19.6834 25.0976 20.3166 24.7071 20.7071L18.3431 27.0711C17.9526 27.4616 17.3195 27.4616 16.9289 27.0711C16.5384 26.6805 16.5384 26.0474 16.9289 25.6569L22.5858 20L16.9289 14.3431C16.5384 13.9526 16.5384 13.3195 16.9289 12.9289C17.3195 12.5384 17.9526 12.5384 18.3431 12.9289L24.7071 19.2929ZM4 19L24 19V21L4 21V19Z" fill="#87A7BE"/>
+                </svg>
+            </button>
         </div>
     </section>
 
@@ -377,13 +400,13 @@
         <h2 class="font-sans font-medium text-xl pb-10">
             Ви переглядали
         </h2>
-        <div class="flex justify-center items-center text-center">
+        <div class="flex justify-center items-center text-center px-5">
             <button class="p-4 mr-3 rounded-full shadow-md hidden lg:block" id="prevBtns">
                 <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                 </svg>
             </button>
-            <div class="slider" id="slidersContainer">
+            <div class="slider text-center items-center" id="slidersContainer">
                 <div class="text-center items-center mr-3">
                     <img alt="" class="pb-6 mx-auto" src="../images/flowers/Rectangle 27.jpg">
                     <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
@@ -625,6 +648,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../js/pagination.js" defer></script>
 <script src="../js/discount.js"></script>
 <script src="../js/slider.js"></script>
 <script src="../js/search.js"></script>
