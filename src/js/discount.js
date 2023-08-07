@@ -10,12 +10,14 @@ async function fetchProductData() {
         const data = await response.json();
 
         data.forEach((product, index) => {
-            const { title, url, price, newPrice } = product;
+            const { title, url, price, newPrice, discount } = product;
 
             // Create new element DOM
             const productCard = document.createElement('div');
             const priceContainer = document.createElement('div');
             const imageElement = document.createElement('img');
+            const imageContainer = document.createElement('div');
+            const discounte = document.createElement('p');
             const titleElement = document.createElement('h2');
             const priceElement = document.createElement('p');
             const newPriceElement = document.createElement('p');
@@ -24,16 +26,21 @@ async function fetchProductData() {
             titleElement.textContent = title;
             priceElement.textContent = price;
             newPriceElement.textContent = newPrice;
+            discounte.textContent = discount;
 
-            productCard.classList.add('product-card', 'text-center', 'items-center', 'mr-8', 'mb-14', 'cursor-pointer', 'p-3', 'relative');
-            imageElement.classList.add('pb-6');
-            titleElement.classList.add('w-52', 'font-normal', 'text-xl', 'pb-7', 'ml-5');
-            priceContainer.classList.add('flex', 'gap-3', 'text-center');
-            priceElement.classList.add('font-normal', 'text-gray-300', 'text-lg', 'line-through');
-            newPriceElement.classList.add('font-semibold', 'text-2xl', 'text-orange-600');
+            productCard.classList.add('text-center', 'items-center', 'mt-5', 'mb-14', 'mr-4', 'cursor-pointer');
+            imageElement.classList.add('pb-6', 'w-full', 'h-full', 'xl:w-full', 'xl:h-full');
+            titleElement.classList.add( 'xl:w-[220px]', 'font-sans', 'font-normal', 'text-base', 'sm:text-xl', 'pb-2', 'xl:pb-10', 'xl:ml-2');
+            imageContainer.classList.add('relative');
+            discounte.classList.add('absolute', 'bottom-8', 'left-2', 'rounded-md', 'font-sans', 'font-medium', 'text-lg', 'py-2', 'px-7', 'bg-[#DD432E]', 'text-white');
+            priceContainer.classList.add('flex', 'gap-1', 'xl:gap-3', 'text-center');
+            priceElement.classList.add('font-normal', 'text-gray-300', 'text-sm', 'xl:text-lg', 'line-through');
+            newPriceElement.classList.add('font-semibold', 'text-lg', 'xl:text-2xl', 'text-orange-600');
 
             // Added elements to the container with product
-            productCard.appendChild(imageElement);
+            imageContainer.appendChild(imageElement);
+            imageContainer.appendChild(discounte);
+            productCard.appendChild(imageContainer);
             productCard.appendChild(titleElement);
             priceContainer.appendChild(priceElement);
             priceContainer.appendChild(newPriceElement);
@@ -63,8 +70,8 @@ async function fetchProductData() {
 
                 // Add classes for elements
                 container.classList.add(`${hoverClassPrefix}${index}`, 'flex', 'flex-col');
-                button.classList.add(`${hoverClassPrefix}${index}`, 'rounded-full', 'bg-black', 'text-white', 'p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
-                fastLink.classList.add(`${hoverClassPrefix}${index}`, 'font-normal', 'text-lg', 'text-black');
+                button.classList.add(`${hoverClassPrefix}${index}`, 'rounded-full', 'bg-[#1A303F]', 'text-white', 'p-2', 'md:p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
+                fastLink.classList.add(`${hoverClassPrefix}${index}`, 'font-normal', 'text-sm', 'md:text-lg', 'text-black');
                 priceContainer.classList.add('pb-5');
 
                 container.appendChild(button);

@@ -63,3 +63,13 @@ input[type=radio]:focus {
     width: 90%;
     margin: 0 auto;
 }
+
+.link.active {
+    color: #87A7BE;
+    text-decoration: underline;
+}
+
+.button:disabled {
+    opacity: 0.53;
+    pointer-events: none;
+}

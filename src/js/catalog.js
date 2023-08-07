@@ -20,10 +20,10 @@ async function fetchProductData() {
             titleElement.textContent = title;
             priceElement.textContent = price;
 
-            productCard.classList.add('text-center', 'items-center', 'mt-5', 'mb-14', 'cursor-pointer');
-            imageElement.classList.add('pb-6', 'w-[150px]', 'h-[164px]', 'xl:w-full', 'xl:h-full');
-            titleElement.classList.add('w-[150px]', 'xl:w-[220px]', 'font-sans', 'font-normal', 'text-base', 'xl:text-xl', 'pb-2', 'xl:pb-10', 'xl:ml-2');
-            priceElement.classList.add('font-semibold', 'text-lg', 'xl:text-2xl');
+            productCard.classList.add('text-center', 'items-center', 'mt-5', 'mb-14', 'mr-4', 'cursor-pointer');
+            imageElement.classList.add('pb-6', 'w-full', 'h-full', 'xl:w-full', 'xl:h-full');
+            titleElement.classList.add( 'xl:w-[220px]', 'font-sans', 'font-normal', 'text-base', 'sm:text-xl', 'pb-2', 'xl:pb-10', 'xl:ml-2');
+            priceElement.classList.add('font-semibold', 'text-lg', 'sm:text-2xl');
 
             // It`s I listen when mouse enter card product
             productCard.addEventListener('mouseenter', (e) => {
@@ -44,10 +44,9 @@ async function fetchProductData() {
 
                 //I`m added class for element
                 container.classList.add('flex', 'flex-col');
-                button.classList.add('rounded-full', 'bg-black', 'text-white', 'p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
-                fastLink.classList.add('font-normal', 'text-lg', 'text-black');
+                button.classList.add('rounded-full', 'bg-[#1A303F]', 'text-white', 'p-2', 'md:p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
+                fastLink.classList.add('font-normal', 'text-sm', 'md:text-lg', 'text-black');
                 priceElement.classList.add('pb-2');
-                productCard.classList.add('z-30');
 
                 container.appendChild(button);
                 container.appendChild(fastLink);
@@ -65,7 +64,6 @@ async function fetchProductData() {
                 button.classList.remove('rounded-full', 'bg-black', 'text-white', 'p-4', 'text-center', 'mb-5', 'font-medium', 'text-lg');
                 fastLink.classList.remove('font-normal', 'text-lg', 'text-black');
                 priceElement.classList.remove('pb-2');
-                productCard.classList.remove('z-30');
 
                 container.remove();
             });

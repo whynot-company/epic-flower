@@ -18,8 +18,10 @@ $(document).ready(function(){
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    prevBtn: $('#prevBtn'),
-                    nextBtn: $('#nextBtn')
+                    arrows: {
+                        prevBtn: $('#prevBtn'),
+                        nextBtn: $('#nextBtn')
+                    }
                 }
             },
             {
@@ -32,6 +34,7 @@ $(document).ready(function(){
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 2,
+                    arrows: false
                 }
             },
             {
@@ -39,6 +42,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false,
                 }
             },
         ]
@@ -64,6 +68,7 @@ $(document).ready(function(){
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                     prevBtn: $('#prevBtns'),
                     nextBtn: $('#nextBtns')
                 }
@@ -72,12 +77,16 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
                 }
             },
             {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false,
                 }
             },
             {
@@ -85,6 +94,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false,
                 }
             },
         ]
