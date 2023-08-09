@@ -3,11 +3,13 @@ $(document).ready(function(){
         infinite: true, // Нескінченний слайдер
         slidesToShow: 5, // Кількість слайдів, які показуються одночасно
         slidesToScroll: 5, // Кількість слайдів, які пересуваються за один раз
+        dots: true,
         responsive: [
             {
                 breakpoint: 1150,
                 settings: {
                     slidesToShow: 4,
+                    slidesToScroll: 4,
                     arrows: {
                         prevBtn: $('#prevBtn'),
                         nextBtn: $('#nextBtn')
@@ -18,6 +20,7 @@ $(document).ready(function(){
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                     arrows: {
                         prevBtn: $('#prevBtn'),
                         nextBtn: $('#nextBtn')
@@ -28,12 +31,14 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                     arrows: false
                 }
             },
@@ -55,6 +60,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
+        dots: true,
         responsive: [
             {
                 breakpoint: 1150,

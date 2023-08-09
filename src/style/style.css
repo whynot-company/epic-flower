@@ -73,3 +73,7 @@ input[type=radio]:focus {
     opacity: 0.53;
     pointer-events: none;
 }
+
+.slick-dots {
+    top: 120%
+}

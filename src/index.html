@@ -38,7 +38,7 @@
     </button>
 
     <div class="fixed z-40 w-full h-full bg-black bg-opacity-40 hidden" id="helpContent">
-        <div class="bg-[#1A303FE5] p-14 text-center items-center h-full sm:rounded-2xl fixed sm:top-5 sm:left-[4%] md:left-[11%] lg:left-[22%] xl:left-[30%] 2xl:left-[33%] overflow-y-auto">
+        <div class="bg-[#1A303FE5] p-14 text-center items-center h-full 2xl:h-[720px] sm:rounded-2xl fixed sm:top-5 sm:left-[4%] md:left-[11%] lg:left-[22%] xl:left-[30%] 2xl:left-[33%] overflow-y-auto">
             <h2 class="font-sans font-semibold text-2xl text-white pb-5 uppercase">
                 Залишити повідомлення
             </h2>
@@ -60,10 +60,10 @@
     </div>
 
     <!-- Header start -->
-    <div class="bg-blue-300 text-center items-center">
+    <div class="bg-[#87A7BE] text-center items-center">
         <p class="text-base font-semibold text-white p-3">Ми працюємо з 08:00 до 21:00 щодня.</p>
     </div>
-    <header class="my-3">
+    <header class="my-3 max-w-[1430px] mx-auto">
         <div>
             <div class="justify-between items-center text-center hidden lg:flex lg:px-14 lg:py-5">
                 <div class="pr-32 flex gap-2 items-center text-center">
@@ -414,7 +414,7 @@
         <div class="slide gap-4 p-5 flex justify-center">
             <div class="relative">
                 <img src="./images/flowers/Rectangle 27 (1).jpg" class="w-36 h-40" alt="image">
-                <p class="absolute bottom-2 left-2 rounded-md font-sans font-medium text-lg py-2 px-7 bg-[#DD432E] text-white">-20%</p>
+                <p class="absolute bottom-2 left-2 rounded-md font-sans font-medium text-base py-1 px-3 bg-[#DD432E] text-white">-20%</p>
             </div>
             <div>
                 <h4 class="font-sans font-medium text-base text-black text-left py-4">Букет 25 Рожевих <br> піонів Мікс</h4>
@@ -434,7 +434,7 @@
     </div>
 
     <section class="py-6">
-        <div class="items-center">
+        <div class="items-center max-w-[1430px] mx-auto">
             <div class="grid grid-cols-1 gap-2 md:px-5 xl:grid-cols-2">
                 <a href="#!">
                     <div class="bg-[#87A7BE] text-white h-40 md:h-96 relative">
@@ -465,7 +465,7 @@
     </section>
 
     <section class="bg-blue-50">
-        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8 max-w-[1430px] mx-auto">
             <img src="./images/banners/Rectangle 69.jpg" alt="image" class="lg:w-1/2">
             <div class="py-6 md:py-24">
                 <h2 class="font-sans font-medium text-xl pb-6 text-center lg:text-left lg:text-4xl lg:uppercase">Унікальні букети для вас</h2>
@@ -492,91 +492,93 @@
 
     <!-- Card slider start -->
     <section class="pt-6 px-6 text-center pb-28">
-        <h2 class="font-sans font-medium text-3xl pb-5">
-            Бестселери
-        </h2>
-        <nav class="pb-12 text-center">
-            <ul class="flex justify-center text-center overflow-x-scroll sm:overflow-hidden w-72 sm:w-full ml-3 sm:ml-0 pl-[193px] sm:pl-0">
-                <li class="pr-2 lg:pr-16">
-                    <a href="#!" class="font-sans font-medium text-xl text-[#DD432E]">Букети</a>
-                </li>
-                <li class="pr-2 lg:pr-16">
-                    <a href="#!" class="font-sans font-medium text-xl text-gray-400">Тюльпани</a>
-                </li>
-                <li class="pr-2 lg:pr-16">
-                    <a href="#!" class="font-sans font-medium text-xl text-gray-400">Троянди</a>
-                </li>
-                <li class="pr-2 lg:pr-16">
-                    <a href="#!" class="font-sans font-medium text-xl text-gray-400">Хризантеми</a>
-                </li>
-                <li>
-                    <a href="#!" class="font-sans font-medium text-xl text-gray-400">Гіпсофіла</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="flex justify-center items-center text-center">
-            <button class="p-4 mr-3 rounded-full shadow-md hidden lg:block" id="prevBtn">
-                <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                </svg>
-            </button>
-            <div class="slider" id="sliderContainer">
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+        <div class="max-w-[1430px] mx-auto">
+            <h2 class="font-sans font-medium text-3xl pb-5">
+                Бестселери
+            </h2>
+            <nav class="pb-12 text-center">
+                <ul class="flex justify-center text-center overflow-x-scroll sm:overflow-hidden w-72 sm:w-full ml-3 sm:ml-0 pl-[193px] sm:pl-0">
+                    <li class="pr-2 lg:pr-16">
+                        <a href="#!" class="font-sans font-medium text-xl text-[#DD432E]">Букети</a>
+                    </li>
+                    <li class="pr-2 lg:pr-16">
+                        <a href="#!" class="font-sans font-medium text-xl text-gray-400">Тюльпани</a>
+                    </li>
+                    <li class="pr-2 lg:pr-16">
+                        <a href="#!" class="font-sans font-medium text-xl text-gray-400">Троянди</a>
+                    </li>
+                    <li class="pr-2 lg:pr-16">
+                        <a href="#!" class="font-sans font-medium text-xl text-gray-400">Хризантеми</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="font-sans font-medium text-xl text-gray-400">Гіпсофіла</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex justify-center items-center text-center">
+                <button class="p-4 mr-3 rounded-full shadow-md hidden lg:block" id="prevBtn">
+                    <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+                <div class="slider" id="sliderContainer">
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
                 </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
+                <button class="p-4 ml-3 rounded-full shadow-md hidden lg:block" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>     
+                </button> 
             </div>
-            <button class="p-4 ml-3 rounded-full shadow-md hidden lg:block" id="nextBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>     
-            </button> 
         </div>
     </section>
     <!-- Card slider end -->
@@ -584,11 +586,11 @@
     <!-- Fast search start -->
 
     <section class="bg-blue-50">
-        <div class="flex flex-col lg:flex-row gap-6">
+        <div class="flex flex-col lg:flex-row gap-6 max-w-[1430px] mx-auto">
             <img src="./images/banners/Rectangle 69 (1).jpg" alt="image" class="lg:w-1/2">
             <div class="p-6 text-center lg:text-left xl:py-28">
                 <h2 class="font-sans font-medium text-xl pb-6 xl:text-4xl">Швидкий підбір</h2>
-                <form class="lg:items-start">
+                <form class="flex flex-col lg:items-start">
                     <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5">
                         <option>Квітка</option>
                         <option></option>
@@ -617,73 +619,75 @@
 
     <!-- Sale start -->
 
-    <section class="py-6 px-6 text-center">
-        <h2 class="font-sans font-medium text-lg pb-5 xl:text-4xl">
-            Елітні композиції
-        </h2>
-        <div class="flex justify-center items-center text-center">
-            <button class="p-4 mr-3 rounded-full shadow-md hidden lg:block" id="prevBtns">
-                <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                </svg>
-            </button>
-            <div class="elite-slides" id="slidersContainers">
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+    <section class="py-6 px-6 pb-28 text-center">
+        <div class="max-w-[1430px] mx-auto">
+            <h2 class="font-sans font-medium text-lg pb-5 xl:text-4xl">
+                Елітні композиції
+            </h2>
+            <div class="flex justify-center items-center text-center">
+                <button class="p-4 mr-3 rounded-full shadow-md hidden lg:block" id="prevBtns">
+                    <svg svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+                <div class="elite-slides" id="slidersContainers">
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
+                    <div class="text-center items-center mr-3">
+                        <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
+                        <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
+                        <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
+                    </div>
                 </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27 (2).jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
-                <div class="text-center items-center mr-3">
-                    <img alt="" class="pb-6 mx-auto" src="./images/flowers/Rectangle 27.jpg">
-                    <p class="w-36 md:w-56 font-normal text-xl pb-5 md:pb-10 mx-auto">Букет 25 Рожевих піонів Мікс</p>
-                    <p class="font-semibold text-xl md:text-2xl mx-auto">1 289 UAH</p>
-                </div>
+                <button class="p-4 ml-3 rounded-full shadow-md hidden lg:block" id="nextBtns">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>     
+                </button> 
             </div>
-            <button class="p-4 ml-3 rounded-full shadow-md hidden lg:block" id="nextBtns">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-300">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>     
-            </button> 
         </div>
     </section>
 
@@ -692,9 +696,9 @@
     <!-- FAQ start -->
 
     <section class="bg-blue-50 pb-10 mb-24">
-        <div class="flex flex-col lg:flex-row gap-9">
+        <div class="flex flex-col lg:flex-row gap-9 max-w-[1430px] mx-auto">
             <img src="./images/FAQ/img (2).jpg" alt="images" class="lg:w-1/2 lg:h-[564px]">
-            <div class="pt-6 xl:pt-14 sm:pl-8 lg:pl-0">
+            <div class="pt-6 xl:pt-14 sm:pl-8 lg:pl-0 px-3">
                 <div>
                     <div class="faq-container">
                         <div class="py-6 mb-5 w-full md:w-[690px] lg:w-[440px] xl:w-[560px] 2xl:w-[660px] border-b-2 border-b-black relative items-center cursor-pointer" >
@@ -758,7 +762,7 @@
                     </div>
                     <div class="faq-container">
                         <div class="py-6 w-full md:w-[690px] lg:w-[440px] xl:w-[560px] 2xl:w-[660px] border-b-2 border-b-black relative items-center cursor-pointer" id="faq-container">
-                            <h4 class="font-medium text-lg">Чи є можливість доставити букет без адреси отримувача?</h4>
+                            <h4 class="font-medium text-lg pr-5">Чи є можливість доставити букет без адреси отримувача?</h4>
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 absolute right-0 top-7 bottom-0">
                                 <path d="M13.5753 18.4498L21.7003 10.3248C21.7758 10.2493 21.8357 10.1597 21.8765 10.0611C21.9174 9.96243 21.9384 9.85672 21.9384 9.74996C21.9384 9.64321 21.9174 9.53749 21.8765 9.43886C21.8357 9.34023 21.7758 9.25061 21.7003 9.17512C21.6248 9.09963 21.5352 9.03975 21.4366 8.99889C21.3379 8.95804 21.2322 8.93701 21.1255 8.93701C21.0187 8.93701 20.913 8.95804 20.8144 8.99889C20.7157 9.03975 20.6261 9.09963 20.5506 9.17512L13.0005 16.7263L5.4503 9.17512C5.29784 9.02266 5.09106 8.93701 4.87545 8.93701C4.65984 8.93701 4.45307 9.02266 4.30061 9.17512C4.14815 9.32758 4.0625 9.53436 4.0625 9.74996C4.0625 9.96557 4.14815 10.1723 4.30061 10.3248L12.4256 18.4498C12.5011 18.5254 12.5907 18.5853 12.6893 18.6262C12.7879 18.6671 12.8937 18.6881 13.0005 18.6881C13.1072 18.6881 13.213 18.6671 13.3116 18.6262C13.4102 18.5853 13.4998 18.5254 13.5753 18.4498Z" fill="#111111"/>
                             </svg>                       
@@ -888,7 +892,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="flex flex-col text-center items-center xl:hidden">
+        <div class="flex flex-col text-center items-center xl:hidden pb-5">
             <div class="flex flex-col items-center text-center gap-5">
                 <ul class="flex gap-5">
                     <li>
