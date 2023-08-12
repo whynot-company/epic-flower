@@ -37,8 +37,8 @@
         </svg>
     </button>
 
-    <div class="fixed z-40 w-full h-full bg-black bg-opacity-40 hidden" id="helpContent">
-        <div class="bg-[#1A303FE5] p-14 text-center items-center h-full 2xl:h-[720px] sm:rounded-2xl fixed sm:top-5 sm:left-[4%] md:left-[11%] lg:left-[22%] xl:left-[30%] 2xl:left-[33%] overflow-y-auto">
+    <div class="absolute z-40 hidden" id="helpContent">
+        <div class="bg-[#1A303FE5] p-14 text-center items-center sm:rounded-2xl fixed sm:top-5 sm:left-[4%] md:left-[11%] lg:left-[22%] xl:left-[30%] 2xl:left-[33%] overflow-y-auto">
             <h2 class="font-sans font-semibold text-2xl text-white pb-5 uppercase">
                 Залишити повідомлення
             </h2>
@@ -591,25 +591,23 @@
             <div class="p-6 text-center lg:text-left xl:py-28">
                 <h2 class="font-sans font-medium text-xl pb-6 xl:text-4xl">Швидкий підбір</h2>
                 <form class="flex flex-col lg:items-start">
-                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5">
-                        <div>
-                            <option>Квітка</option>
-                            <option>f</option>
-                            <option>s</option>
-                            <option>g</option>
-                        </div>
+                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5 bg-white">
+                        <option class="rounded-xl bg-[#87A7BE1A]">Квітка</option>
+                        <option class="rounded-xl bg-[#87A7BE1A]">f</option>
+                        <option class="rounded-xl bg-[#87A7BE1A]">s</option>
+                        <option class="rounded-xl bg-[#87A7BE1A]">g</option>
                     </select>
-                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5">
-                        <option>Кому/привид</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5 bg-white">
+                        <option class="rounded-xl bg-[#87A7BE1A]">Кому/привид</option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
                     </select>
-                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5">
-                        <option>Ціна</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                    <select class="w-full md:w-[640px] lg:w-[440px] xl:w-[560px] cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 mb-3 xl:mb-5 bg-white">
+                        <option class="rounded-xl bg-[#87A7BE1A]">Ціна</option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
+                        <option class="rounded-xl bg-[#87A7BE1A]"></option>
                     </select>
                     <button class="bg-slate-800 text-white font-sans font-medium text-xl w-full md:w-[640px] lg:w-[440px] text-center rounded-full p-4">Замовити</button>
                 </form>
