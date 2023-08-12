@@ -1,6 +1,7 @@
 // JavaScript
 // Отримуємо посилання на кнопку відкриття модального вікна та на саме модальне вікно
 const openModalBtn = document.getElementById('openSearch');
+const openModalBtnMobile = document.getElementById('opensearch');
 const closeModalBtn = document.getElementById('closeSearch');
 const modal = document.getElementById('search');
 
@@ -17,6 +18,8 @@ function closeModal() {
 // Додаємо обробник події для кнопки відкриття модального вікна
 openModalBtn.addEventListener('click', openModal);
 
+openModalBtnMobile.addEventListener('click', openModal);
+
 // Додаємо обробник події для кнопки закриття модального вікна
 closeModalBtn.addEventListener('click', closeModal);
 
@@ -25,7 +28,4 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeModal();
     }
-});
-
-// JavaScript
-// Отримуємо посилання на кнопку відкриття модального вікна та на саме модальне вікно
+})
