@@ -1,11 +1,15 @@
-const openButton = document.querySelector('.buttonHelp'),
-    closeButton = document.querySelector('.closeHelpButton'),
-    content = document.getElementById('helpContent');
+const openButtonHelp = document.querySelector('.buttonHelp');
+const closeButtonHelp = document.querySelector('.closeHelpButton');
+const content = document.getElementById('helpContent');
 
-openButton.addEventListener('click', () => {
+function openContent() {
     content.style.display = 'block';
-});
+}
 
-closeButton.addEventListener('click', () => {
-    content.style.display = "none";
-})
+function closeContent() {
+    content.style.display = 'none';
+}
+
+openButtonHelp.addEventListener('click', openContent);
+
+closeButtonHelp.addEventListener('click', closeContent);
