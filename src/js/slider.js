@@ -10,10 +10,8 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
-                    arrows: {
-                        prevBtn: $('#prevBtn'),
-                        nextBtn: $('#nextBtn')
-                    },
+                    prevBtn: $('#prevBtn'),
+                    nextBtn: $('#nextBtn')
                 }
             },
             {
@@ -21,10 +19,8 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    arrows: {
-                        prevBtn: $('#prevBtn'),
-                        nextBtn: $('#nextBtn')
-                    }
+                    prevBtn: $('#prevBtn'),
+                    nextBtn: $('#nextBtn')
                 }
             },
             {

@@ -77,3 +77,48 @@ input[type=radio]:focus {
 .slick-dots {
     top: 120%
 }
+
+.slick-prev {
+    border-radius: 100%;
+    background-color: #fff !important;
+    padding: 30px;
+    left: -6%;
+    top: 53%;
+}
+
+.slick-next {
+    border-radius: 100%;
+    background-color: #fff !important;
+    padding: 30px;
+    right: -6%;
+    top: 53%;
+}
+
+.slick-prev::before {
+    content: '';
+    background-image: url(../images/icons/Arrow\ 4\ \(1\).svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 32%;
+    top: 42%;
+}
+
+.slick-next::before {
+    content: '';
+    background-image: url(../images/icons/Arrow\ 4.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 32%;
+    top: 42%;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus  {
+    background-color: #fff;
+}
