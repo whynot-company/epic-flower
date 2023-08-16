@@ -145,41 +145,49 @@
     </div>
     <div class="pl-[10%] gap-6 pb-14 hidden xl:flex max-w-[1430px] mx-auto">
         <div class="flex flex-col gap-5">
-            <div class="bg-white rounded-2xl p-10 ">
+            <div class="bg-white rounded-2xl p-10">
                 <h1 class="font-semibold text-3xl pb-6">Відправник</h1>
                 <div class="items-center">
-                    <label class="flex gap-3 font-normal text-lg">
-                        <input type="radio" onMouseDown="this.__chk = this.checked" onClick="if (this.__chk) this.checked = false" /> Я сам(-а) отримаю замовлення
+                    <label class="flex gap-3 font-normal text-lg items-center">
+                        <input type="checkbox" class="hideCheckbox" /> Я сам(-а) отримаю замовлення
                     </label>
                 </div>
                 <form class="border-b-2 border-blue-100 py-10">
                     <div class="flex flex-col gap-7">
                         <div class="flex justify-between gap-7">
-                            <input type="text" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Ваше ім'я">
-                            <input type="tel" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Номер телефону">
+                            <input type="text" class=" w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Ваше ім'я">
+                            <input type="tel" class=" w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Номер телефону">
                         </div>
                         <div>
-                            <input type="email" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="E-mail">
+                            <input type="email" class=" w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="E-mail">
                         </div>
                     </div>
                 </form>
-                <h1 class="font-semibold text-3xl py-6">Одержувач</h1>
-                <form class="py-10">
-                    <div class="flex flex-col gap-7">
-                        <div class="flex justify-between gap-7">
-                            <input type="text" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Ваше ім'я">
-                            <input type="tel" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Номер телефону">
+                <div class="hiddenContainer">
+                    <h1 class="font-semibold text-3xl py-6">Одержувач</h1>
+                    <form class="py-10">
+                        <div class="flex flex-col gap-7">
+                            <div class="flex justify-between gap-7">
+                                <input type="text" class=" w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Ваше ім'я">
+                                <input type="tel" class=" w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Номер телефону">
+                            </div>
+                            <div class="dropdown mb-6">
+                                <button class="dropbtn flex justify-between items-center w-full md:w-[640px] lg:w-[440px] xl:w-[600px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown1">
+                                    Label
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-content w-full md:w-[640px] lg:w-[440px] xl:w-[560px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown1">
+                                    <a href="#!" class="block mb-3">a</a>
+                                    <a href="#!" class="block mb-3">f</a>
+                                    <a href="#!" class="block mb-3">s</a>
+                                    <a href="#!" class="block">g</a>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <select class="w-full cursor-pointer rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="E-mail">
-                                <option>Label</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
                 <div class="flex items-center gap-2 font-normal text-base text-gray-400">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 2.34375C10.4913 2.34375 8.52768 2.9394 6.85749 4.05539C5.18731 5.17137 3.88556 6.75756 3.11685 8.61337C2.34815 10.4692 2.14702 12.5113 2.5389 14.4814C2.93079 16.4515 3.89807 18.2612 5.31845 19.6816C6.73883 21.1019 8.5485 22.0692 10.5186 22.4611C12.4887 22.853 14.5308 22.6519 16.3866 21.8832C18.2424 21.1144 19.8286 19.8127 20.9446 18.1425C22.0606 16.4723 22.6563 14.5087 22.6563 12.5C22.6534 9.80727 21.5825 7.22564 19.6784 5.32159C17.7744 3.41754 15.1927 2.34659 12.5 2.34375ZM12.1094 7.03125C12.3412 7.03125 12.5677 7.09998 12.7604 7.22875C12.9532 7.35751 13.1034 7.54054 13.192 7.75467C13.2807 7.9688 13.304 8.20443 13.2587 8.43175C13.2135 8.65907 13.1019 8.86788 12.938 9.03177C12.7741 9.19566 12.5653 9.30727 12.338 9.35248C12.1107 9.3977 11.8751 9.37449 11.6609 9.2858C11.4468 9.1971 11.2638 9.0469 11.135 8.85418C11.0062 8.66147 10.9375 8.4349 10.9375 8.20312C10.9375 7.89232 11.061 7.59425 11.2807 7.37448C11.5005 7.15472 11.7986 7.03125 12.1094 7.03125ZM13.2813 17.9688C12.8669 17.9688 12.4694 17.8041 12.1764 17.5111C11.8834 17.2181 11.7188 16.8207 11.7188 16.4062V12.5C11.5116 12.5 11.3128 12.4177 11.1663 12.2712C11.0198 12.1247 10.9375 11.926 10.9375 11.7188C10.9375 11.5115 11.0198 11.3128 11.1663 11.1663C11.3128 11.0198 11.5116 10.9375 11.7188 10.9375C12.1332 10.9375 12.5306 11.1021 12.8236 11.3951C13.1166 11.6882 13.2813 12.0856 13.2813 12.5V16.4062C13.4885 16.4062 13.6872 16.4886 13.8337 16.6351C13.9802 16.7816 14.0625 16.9803 14.0625 17.1875C14.0625 17.3947 13.9802 17.5934 13.8337 17.7399C13.6872 17.8864 13.4885 17.9688 13.2813 17.9688Z" fill="#1A303F"/>
@@ -192,12 +200,12 @@
                 <form class="pt-10">
                     <div class="flex flex-col gap-7">
                         <div class="flex justify-between gap-7">
-                            <input type="text" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Місто">
-                            <input type="tel" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Вулиця">
+                            <input type="text" class="w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Місто">
+                            <input type="text" class="w-2/4 rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Вулиця">
                         </div>
                         <div class="flex gap-7">
-                            <input type="email" class="w-[30%] rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Дім">
-                            <input type="email" class="w-[30%] rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Квартира">
+                            <input type="text" class="w-[30%] rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Дім">
+                            <input type="text" class="w-[30%] rounded-full border-2 border-gray-200 p-3 placeholder:text-base placeholder:font-normal placeholder:text-[#C6C6C6]" placeholder="Квартира">
                         </div>
                     </div>
                 </form>
@@ -207,8 +215,8 @@
                 <form class="pt-10">
                     <div>
                         <div class="flex gap-3">
-                            <input type="date" id="dataToday" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500">
-                            <input type="datetime" class="w-1/3 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Час">
+                            <input type="date" id="dataToday" class="w-2/4 rounded-full border-2 border-gray-200 p-3 text-lg font-normal text-gray-500">
+                            <input type="time" class="w-1/3 rounded-full border-2 border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Час">
                         </div>
                     </div>
                 </form>
@@ -220,7 +228,7 @@
                         <div class="items-center">
                             <label class="flex gap-3 font-normal text-lg items-center">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox4" />
                                 </div>
                                 <p class="font-sans font-medium text-lgsm">LiqPay</p>
                             </label>
@@ -229,7 +237,7 @@
                         <div class="items-center pb-5">
                             <label class="flex gap-3 font-normal text-lg items-center">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox5" />
                                 </div>
                                 <p class="font-sans font-medium text-lg">Переказ на мою особисту карту</p>
                             </label>
@@ -237,7 +245,7 @@
                         <div class="items-center pb-5">
                             <label class="flex gap-3 font-normal text-lg">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox6" />
                                 </div>
                                 <p class="font-sans font-normal text-lg">Не передзвонювати для підтвердження замовлення</p>
                             </label>
@@ -269,12 +277,12 @@
                 <p class="font-semibold text-lg">1 489 UAH</p>
             </div>
             <div class="pb-12">
-                <button class="rounded-full py-4 px-10 text-white text-center font-medium text-xl bg-slate-700 mb-5 w-full">Сформути замовлення</button>
+                <button class="rounded-full py-4 px-10 text-white text-center font-medium text-xl bg-slate-700 mb-5 w-full">Сформувати замовлення</button>
                 <button class="rounded-full py-4 px-12 text-white text-center font-medium text-xl bg-slate-700 w-full" id="openButton">Швидке замовлення</button>
             </div>
             <div class="items-center">
                 <label class="font-normal text-lg">
-                    <input type="radio" onMouseDown="this.__chk = this.checked" onClick="if (this.__chk) this.checked = false" /> Підтверджуючи замовлення, я приймаю умови угоди користувача
+                    <input type="checkbox" id="checkbox5" /> Підтверджуючи замовлення, я приймаю умови угоди користувача
                 </label>
             </div>
         </div>
@@ -286,45 +294,56 @@
                 <div class="items-center py-5">
                     <label class="flex gap-1 font-normal text-lg items-center">
                         <div> 
-                            <input type="radio" />
+                            <input class="hideCheckbox" type="checkbox" id="checkbox6" />
                         </div>
                         <p class="font-sans font-normal text-sm">Я сам(-а) отримаю замовлення</p>
                     </label>
                 </div>
                 <form>
-                    <input type="text" placeholder="Ім'я" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                    <input type="tel" placeholder="Номер телефону" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                    <input type="email" placeholder="E-mail" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
+                    <input type="text" placeholder="Ім'я" class=" rounded-full border-2 border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                    <input type="tel" placeholder="Номер телефону" class=" rounded-full border-2 border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                    <input type="email" placeholder="E-mail" class=" rounded-full border-2 border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
                 </form>
             </div>
-            <div>
+            <div class="hiddenContainer">
                 <h2 class="font-sans font-semibold text-lg py-5">Одержувач</h2>
                 <form>
-                    <input type="text" placeholder="Ім'я" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                    <input type="tel" placeholder="Номер телефону" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                    <select type="email" placeholder="E-mail" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base bg-white">
-                        <option>Label</option>
-                    </select>
-                </form>
-                <div class="flex gap-2">
-                    <div>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM9.6875 5.625C9.87292 5.625 10.0542 5.67998 10.2084 5.783C10.3625 5.88601 10.4827 6.03243 10.5536 6.20373C10.6246 6.37504 10.6432 6.56354 10.607 6.7454C10.5708 6.92725 10.4815 7.0943 10.3504 7.22541C10.2193 7.35652 10.0523 7.44581 9.8704 7.48199C9.68854 7.51816 9.50004 7.49959 9.32874 7.42864C9.15743 7.35768 9.01101 7.23752 8.908 7.08335C8.80499 6.92918 8.75 6.74792 8.75 6.5625C8.75 6.31386 8.84878 6.0754 9.02459 5.89959C9.20041 5.72377 9.43886 5.625 9.6875 5.625ZM10.625 14.375C10.2935 14.375 9.97554 14.2433 9.74112 14.0089C9.5067 13.7745 9.375 13.4565 9.375 13.125V10C9.20924 10 9.05027 9.93415 8.93306 9.81694C8.81585 9.69973 8.75 9.54076 8.75 9.375C8.75 9.20924 8.81585 9.05027 8.93306 8.93306C9.05027 8.81585 9.20924 8.75 9.375 8.75C9.70652 8.75 10.0245 8.8817 10.2589 9.11612C10.4933 9.35054 10.625 9.66848 10.625 10V13.125C10.7908 13.125 10.9497 13.1908 11.0669 13.3081C11.1842 13.4253 11.25 13.5842 11.25 13.75C11.25 13.9158 11.1842 14.0747 11.0669 14.1919C10.9497 14.3092 10.7908 14.375 10.625 14.375Z" fill="#1A303F"/>
-                        </svg>
+                    <input type="text" placeholder="Ім'я" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                    <input type="tel" placeholder="Номер телефону" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                    <div class="dropdown mb-6">
+                        <button class="dropbtn flex justify-between items-center w-full md:w-[640px] lg:w-[440px] xl:w-[600px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown2">
+                            Label
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-content w-[320px] md:w-[640px] lg:w-[440px] xl:w-[560px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown2">
+                            <a href="#!" class="block mb-3">a</a>
+                            <a href="#!" class="block mb-3">f</a>
+                            <a href="#!" class="block mb-3">s</a>
+                            <a href="#!" class="block">g</a>
+                        </div>
                     </div>
-                    <p class="font-sans font-normal text-sm text-[#C6C6C6]">
-                        Ми зателефонуємо одержувачу та уточнимо зручний час та адресу доставки.
-                    </p>
+                </form>
+            </div>
+            <div class="flex gap-2">
+                <div>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM9.6875 5.625C9.87292 5.625 10.0542 5.67998 10.2084 5.783C10.3625 5.88601 10.4827 6.03243 10.5536 6.20373C10.6246 6.37504 10.6432 6.56354 10.607 6.7454C10.5708 6.92725 10.4815 7.0943 10.3504 7.22541C10.2193 7.35652 10.0523 7.44581 9.8704 7.48199C9.68854 7.51816 9.50004 7.49959 9.32874 7.42864C9.15743 7.35768 9.01101 7.23752 8.908 7.08335C8.80499 6.92918 8.75 6.74792 8.75 6.5625C8.75 6.31386 8.84878 6.0754 9.02459 5.89959C9.20041 5.72377 9.43886 5.625 9.6875 5.625ZM10.625 14.375C10.2935 14.375 9.97554 14.2433 9.74112 14.0089C9.5067 13.7745 9.375 13.4565 9.375 13.125V10C9.20924 10 9.05027 9.93415 8.93306 9.81694C8.81585 9.69973 8.75 9.54076 8.75 9.375C8.75 9.20924 8.81585 9.05027 8.93306 8.93306C9.05027 8.81585 9.20924 8.75 9.375 8.75C9.70652 8.75 10.0245 8.8817 10.2589 9.11612C10.4933 9.35054 10.625 9.66848 10.625 10V13.125C10.7908 13.125 10.9497 13.1908 11.0669 13.3081C11.1842 13.4253 11.25 13.5842 11.25 13.75C11.25 13.9158 11.1842 14.0747 11.0669 14.1919C10.9497 14.3092 10.7908 14.375 10.625 14.375Z" fill="#1A303F"/>
+                    </svg>
                 </div>
+                <p class="font-sans font-normal text-sm text-[#C6C6C6]">
+                    Ми зателефонуємо одержувачу та уточнимо зручний час та адресу доставки.
+                </p>
             </div>
             <div>
                 <h2 class="font-sans font-semibold text-lg py-5">Адреса</h2>
                 <form>
-                    <input type="text" placeholder="Місто" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                    <input type="text" placeholder="Вулиця" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
+                    <input type="text" placeholder="Місто" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                    <input type="text" placeholder="Вулиця" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
                     <div class="flex gap-3">
-                        <input type="text" placeholder="Дім" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
-                        <input type="text" placeholder="Квартира" class="rounded-full border border-[#C6C6C6] p-4 w-full mb-6 font-sans font-normal text-base">
+                        <input type="text" placeholder="Дім" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
+                        <input type="text" placeholder="Квартира" class=" rounded-full border border-[#C6C6C6] p-4 w-full mb-6 placeholder:font-sans placeholder:font-normal placeholder:text-base placeholder:text-[#C6C6C6]">
                     </div>
                 </form>
             </div>
@@ -333,8 +352,8 @@
                 <form>
                     <div>
                         <div class="flex gap-3">
-                            <input type="date" id="dataToday" class="w-2/4 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500 bg-white" placeholder="Дата">
-                            <input type="datetime" class="w-1/3 rounded-full border border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Час">
+                            <input type="date" id="dataToday" class="w-2/4 rounded-full border-2 border-gray-200 p-3 text-lg font-normal text-gray-500 bg-white" placeholder="Дата">
+                            <input type="time" class="w-1/3 rounded-full border-2 border-gray-200 p-3 text-lg font-normal text-gray-500" placeholder="Час">
                         </div>
                     </div>
                 </form>
@@ -346,7 +365,7 @@
                         <div class="items-center">
                             <label class="flex gap-1 font-normal text-lg items-center">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox1" />
                                 </div>
                                 <p class="font-sans font-medium text-sm">LiqPay</p>
                             </label>
@@ -355,7 +374,7 @@
                         <div class="items-center pb-5">
                             <label class="flex gap-1 font-normal text-lg items-center">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox2" />
                                 </div>
                                 <p class="font-sans font-medium text-sm">Переказ на мою особисту карту</p>
                             </label>
@@ -363,7 +382,7 @@
                         <div class="items-center pb-5">
                             <label class="flex gap-1 font-normal text-lg">
                                 <div> 
-                                    <input type="radio" />
+                                    <input type="checkbox" id="checkbox3" />
                                 </div>
                                 <p class="font-sans font-normal text-sm">Не передзвонювати для підтвердження замовлення</p>
                             </label>
@@ -386,13 +405,13 @@
                 <p class="font-sans font-semibold text-lg">1 489 UAH</p>
             </div>
             <div class="pb-3">
-                <button class="rounded-full py-4 px-12 text-white text-center font-medium text-xl bg-[#1A303F] mb-3 w-full">Сформути замовлення</button>
+                <button class="rounded-full py-4 px-12 text-white text-center font-medium text-xl bg-[#1A303F] mb-3 w-full">Сформувати замовлення</button>
                 <button class="rounded-full py-4 px-12 text-white text-center font-medium text-xl bg-[#1A303F] w-full" id="openButton">Швидке замовлення</button>
             </div>
             <div class="pt-5">
                 <label class="flex gap-1 font-normal text-lg">
                     <div> 
-                        <input type="radio" />
+                        <input type="checkbox" />
                     </div>
                     <p class="font-sans font-medium text-sm">Підтверджуючи замовлення, я приймаю умови угоди користувача</p>
                 </label>
@@ -409,4 +428,7 @@
 </body>
 <script src="../js/modalWindow.js"></script>
 <script src="../js/helpWindow.js"></script>
+<script src="../js/checkboxes.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/checkboxLogic.js"></script>
 </html>

@@ -21,8 +21,8 @@ body {
     display: none;
 }
 
-input[type=radio] {
-    border: 1px solid #87A7BE;
+input[type=checkbox] {
+    border: 2px solid #87A7BE;
     border-radius: 5px;
     width: 16px;
     height: 16px;
@@ -30,15 +30,35 @@ input[type=radio] {
     -webkit-appearance: none;
 }
 
-input[type=radio]:checked {
-    background: #87A7BE;
-    border: 1px solid #87A7BE;
+input[type=checkbox]:checked {
+    position: relative;
+    border: 2px solid #87A7BE;
     border-radius: 5px;
     background-size: 1px 1px;
 }
 
-input[type=radio]:focus {
+input[type=checkbox]:checked::before {
+    content: '';
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    background: #1A303F;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+input[type=checkbox]:focus {
     outline-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    outline: none; 
+    border-color: #ccc; 
 }
 
 @font-face {
@@ -121,4 +141,21 @@ input[type=radio]:focus {
 .slick-next:hover,
 .slick-next:focus  {
     background-color: #fff;
+}
+
+.slick-dots li button::before {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 20px;
+    color: #87A7BE !important;
+    border-radius: 100%;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1 !important;
+    font-size: 20px;
+    width: 20px !important;
+    height: 20px !important;
+    color: #87A7BE !important;
+    border-radius: 100%;
 }
