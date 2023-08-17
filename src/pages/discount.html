@@ -308,7 +308,7 @@
 
     <div class="bg-[#87A7BE1A] text-center mb-14">
         <div class="flex justify-center p-3">
-            <p class="font-light text-lg">Головна /</p>
+            <a href="../index.html" class="font-light text-lg">Головна /</a>
             <p class="font-semibold text-lg">Акції</p>
         </div>
     </div>
@@ -339,59 +339,94 @@
     </div>
 
     <form class="justify-center items-center text-center gap-6 mb-20 hidden xl:flex xl:gap-3">
-        <div class="w-56 rounded-full border border-gray-100">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option>Квітка</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown1">
+                Квітка
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown1">
+                <a href="#" class="block mb-3">a</a>
+                <a href="#" class="block mb-3">f</a>
+                <a href="#" class="block mb-3">s</a>
+                <a href="#" class="block">g</a>
+            </div>
         </div>
-        <div class="w-56 rounded-full border border-gray-100">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option>Ціна</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown2">
+                Ціна
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown2">
+                <a href="#" class="block mb-3">a</a>
+                <a href="#" class="block mb-3">f</a>
+                <a href="#" class="block mb-3">s</a>
+                <a href="#" class="block">g</a>
+            </div>
         </div>
-        <div class="w-56 rounded-full border border-gray-100">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option>Колір</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown3">
+                Колір
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown3">
+                <a href="#" class="block mb-3">a</a>
+                <a href="#" class="block mb-3">f</a>
+                <a href="#" class="block mb-3">s</a>
+                <a href="#" class="block">g</a>
+            </div>
         </div>
-        <div class="w-56 rounded-full border border-gray-100">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option>Привід</option>
-                <option>1 вересня</option>
-                <option>8 березня</option>
-                <option>14 лютого</option>
-                <option>Юбілей</option>
-                <option>День матері/батька</option>
-                <option>Букет для мами</option>
-                <option>Весільний букет</option>
-                <option>День вчителя</option>
-                <option>Випускний</option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown4">
+                Кому / Привід
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown4">
+                <a href="#" class="block mb-3">1 вересня</a>
+                <a href="#" class="block mb-3">8 березня</a>
+                <a href="#" class="block mb-3">14 лютого</a>
+                <a href="#" class="block mb-3">Юбілей</a>
+                <a href="#" class="block mb-3">День матері/батька</a>
+                <a href="#" class="block mb-3">Букет для мами</a>
+                <a href="#" class="block mb-3">Весільний букет</a>
+                <a href="#" class="block mb-3">День вчителя</a>
+                <a href="#" class="block">Випускний</a>
+            </div>
         </div>
-        <div class="w-56 border border-gray-100 rounded-full">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option class="">Розмір</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown5">
+                Розмір
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown5">
+                <a href="#" class="block mb-3">a</a>
+                <a href="#" class="block mb-3">f</a>
+                <a href="#" class="block mb-3">s</a>
+                <a href="#" class="block">g</a>
+            </div>
         </div>
-        <div class="w-56 rounded-full border border-gray-100">
-            <select class="font-sans font-medium text-lg rounded-full cursor-pointer w-48 pl-0 p-6">
-                <option class="">Тип букету</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
+        <div class="dropdown mb-6">
+            <button class="dropbtn flex justify-between items-center w-[203px] cursor-pointer rounded-full border border-gray-200 p-3 px-5 text-lg font-medium text-[#1A303F] bg-white" data-dropdown="dropdown6">
+                Тип букету
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4868 15.6113L18.3618 8.7363C18.4257 8.67242 18.4763 8.59659 18.5109 8.51314C18.5455 8.42968 18.5633 8.34023 18.5633 8.24989C18.5633 8.15956 18.5455 8.07011 18.5109 7.98665C18.4763 7.90319 18.4257 7.82736 18.3618 7.76349C18.2979 7.69961 18.2221 7.64894 18.1386 7.61437C18.0552 7.5798 17.9657 7.56201 17.8754 7.56201C17.785 7.56201 17.6956 7.5798 17.6121 7.61437C17.5287 7.64894 17.4529 7.69961 17.389 7.76349L11.0004 14.1529L4.61179 7.76349C4.48279 7.63448 4.30782 7.56201 4.12538 7.56201C3.94294 7.56201 3.76798 7.63448 3.63898 7.76349C3.50997 7.89249 3.4375 8.06746 3.4375 8.24989C3.4375 8.43233 3.50997 8.6073 3.63898 8.7363L10.514 15.6113C10.5778 15.6752 10.6536 15.7259 10.7371 15.7605C10.8206 15.7951 10.91 15.8129 11.0004 15.8129C11.0907 15.8129 11.1802 15.7951 11.2637 15.7605C11.3471 15.7259 11.4229 15.6752 11.4868 15.6113Z" fill="#111111"/>
+                </svg>
+            </button>
+            <div class="dropdown-content w-[203px] bg-white text-left rounded-xl absolute border border-[#ccc] p-5 z-10 hidden" id="dropdown6">
+                <a href="#" class="block mb-3">a</a>
+                <a href="#" class="block mb-3">f</a>
+                <a href="#" class="block mb-3">s</a>
+                <a href="#" class="block">g</a>
+            </div>
         </div>
     </form>
 
@@ -582,7 +617,7 @@
 
     <!-- Footer start -->
 
-    <footer class="bg-slate-950 text-white py-5" id="footer">
+    <footer class="bg-slate-950 text-white pt-5" id="footer">
         <div class="hidden text-center justify-center gap-36 p-4 xl:flex">
             <nav>
                 <ul>
@@ -651,11 +686,19 @@
                             Будь в курсі останніх новин
                         </h2>
                     </li>
-                    <li class="flex flex-col">
-                        <input type="text" placeholder="Email" class="rounded-full p-4 mb-4 relative text-black">
-                        <button type="submit" class="rounded-full text-white font-medium text-xl bg-[#87A7BE] p-4 mb-5">
-                            Відправити
-                        </button>
+                    <li class="flex flex-col items-center">
+                        <div class="flex flex-col">
+                            <input type="text" placeholder="Email" class="rounded-full p-4 mb-4 relative text-black">
+                            <button type="submit" class="rounded-full text-white font-medium text-xl bg-[#87A7BE] p-4 px mb-5">
+                                Відправити
+                            </button>
+                        </div>
+                        <div class="flex items-center text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>                      
+                            <a href="#!" class="pl-2 font-normal text-lg">+38 (095) 75 81 000</a>
+                        </div>
                         <div class="flex justify-center gap-3 mt-5">
                             <a href="#!">
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -692,7 +735,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="flex flex-col text-center items-center xl:hidden">
+        <div class="flex flex-col text-center items-center xl:hidden pb-5">
             <div class="flex flex-col items-center text-center gap-5">
                 <ul class="flex gap-5">
                     <li>
@@ -713,18 +756,28 @@
                 </ul>
                 <ul class="flex gap-5">
                     <li>
-                        <a href="#footer" class="font-sans font-normal text-base">Контакти</a>
+                        <a href="#footer" class="font-sans font-normal text-base">
+                            Контакти
+                        </a>
                     </li>
                     <li>
-                        <a href="./about_us.html" class="font-sans font-normal text-base">Про нас</a>
+                        <a href="./about_us.html" class="font-sans font-normal text-base">
+                            Про нас
+                        </a>
                     </li>
             </ul>
             </div>
-            <ul class="flex flex-col gap-5 mt-5">
+            <ul class="flex flex-col gap-5 mt-5 pb-5">
                 <h2 class="font-sans font-medium text-lg">Будь в курсі останніх новин</h2>
                 <input type="email" placeholder="E-mail" class="rounded-full px-5 py-3 text-black">
                 <button type="submit" class="rounded-full bg-[#87A7BE] text-white text-center font-sans font-medium text-base py-4">Відправити</button>
             </ul>
+            <div class="flex items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>                      
+                <a href="#!" class="pl-2 font-normal text-lg">+38 (095) 75 81 000</a>
+            </div>
             <div class="flex justify-center gap-3 mt-5">
                 <a href="#!">
                     <svg width="30" height="30" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -771,4 +824,5 @@
 <script src="../js/filters.js"></script>
 <script src="../js/sidebar.js"></script>
 <script src="../js/helpWindow.js"></script>
+<script src="../js/dropdown.js"></script>
 </html>
