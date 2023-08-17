@@ -1,13 +1,20 @@
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const checkboxIds = ['checkbox1', 'checkbox2', 'checkbox4', 'checkbox5']; // Замість 'checkbox1', 'checkbox2', 'checkbox3' додайте свої ID checkbox'ів
 
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', function () {
-        if (this.checked) {
-            checkboxes.forEach(otherCheckbox => {
-                if (otherCheckbox !== this) {
-                    otherCheckbox.checked = false;
-                }
-            });
-        }
-    });
+checkboxIds.forEach(checkboxId => {
+    const checkbox = document.getElementById(checkboxId);
+    
+    if (checkbox) {
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                checkboxIds.forEach(otherId => {
+                    if (otherId !== checkboxId) {
+                        const otherCheckbox = document.getElementById(otherId);
+                        if (otherCheckbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    }
+                });
+            }
+        });
+    }
 });
