@@ -12,7 +12,7 @@
 <body>
     <!-- Modal window -->
 
-    <div class="fixed z-40 pt-10 left-0 top-0 w-full h-full overflow-auto bg-slate-900 bg-opacity-70 hidden" id="search">
+    <div class="fixed z-40 pt-10 left-0 top-0 w-full h-full overflow-auto bg-slate-900 bg-opacity-90 backdrop-blur-md hidden" id="search">
         <div class="flex justify-center relative p-36">
             <div class="flex gap-5 items-center text-center border-b-2 border-b-white pb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#87A7BE" class="w-9 h-6 cursor-pointer">
@@ -59,6 +59,53 @@
         </div>
     </div>
 
+    <div class="fixed z-40 left-0 top-0 w-full h-full overflow-auto bg-slate-900 bg-opacity-90 backdrop-blur-sm block hidden" id="location">
+        <div class="flex flex-col items-center justify-center relative p-28 w-full xl:w-[1188px] mx-auto bg-white rounded-xl">
+            <div class="flex gap-5 items-center text-center border-b-2 border-b-white pb-3 text-white mb-5">
+                <input class="bg-transparent text-black placeholder:font-sans placeholder:font-normal placeholder:text-xl w-[340px] sm:w-[600px] md:w-[700px] lg:w-[1000px] xl:w-[968px] placeholder:text-black border-b-2 border-b-black pb-5" type="text" placeholder="Знайти">
+            </div>
+            <div class="border-b-2 border-b-[#87A7BE47] pb-10">
+                <div class="w-[360px] sm:w-[600px] md:w-[700px] lg:w-[1000px] px-2 xl:max-w-[968px]">
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Київ</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Кропивниький</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Вінниця</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Дніпро</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Донецьк</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Житомир</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Запоріжжя</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Івано-Франківськ</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Луганськ</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Луцьк</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Львів</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Миколаїв</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Одеса</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Полтава</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Рівне</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Суми</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Тернопіль</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Ужгород</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Харків</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Херсон</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Хмельницький</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Черкаси</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Чернівці</button>
+                    <button class="text-[#87A7BE] font-sans font-medium text-xl py-2 xl:py-4 px-3 xl:px-7 border-2 border-[#87A7BE] rounded-full mb-2 mr-2">Чернігів</button>
+                </div>
+            </div>
+            <div class="pt-10">
+                <h3 class="font-sans font-normal text-2xl absolute left-2 sm:left-5 md:left-9 lg:left-20 xl:left-[10%]">Шукати на мапі</h3>
+                <div class="pt-10">
+                    <iframe class="w-[340px] sm:w-[600px] md:w-[700px] lg:w-[1000px] lg:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20309.075323923767!2d30.4721233!3d50.4851493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1692304357551!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <button class="absolute right-10 xl:right-12 top-4 float-right" id="closeLocation">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.9126 30.5876C32.0047 30.6734 32.0785 30.7769 32.1298 30.8919C32.181 31.0069 32.2086 31.131 32.2108 31.2569C32.213 31.3828 32.1899 31.5078 32.1427 31.6245C32.0956 31.7413 32.0254 31.8473 31.9364 31.9364C31.8473 32.0254 31.7413 32.0956 31.6245 32.1427C31.5078 32.1899 31.3828 32.213 31.2569 32.2108C31.131 32.2086 31.0069 32.181 30.8919 32.1298C30.7769 32.0785 30.6734 32.0047 30.5876 31.9126L20.0001 21.3266L9.41255 31.9126C9.23483 32.0782 8.99978 32.1683 8.7569 32.164C8.51402 32.1597 8.28229 32.0613 8.11052 31.8896C7.93876 31.7178 7.84037 31.4861 7.83608 31.2432C7.8318 31.0003 7.92195 30.7653 8.08755 30.5876L18.6735 20.0001L8.08755 9.41255C7.92195 9.23483 7.8318 8.99978 7.83608 8.7569C7.84037 8.51402 7.93876 8.28229 8.11052 8.11052C8.28229 7.93876 8.51402 7.84037 8.7569 7.83608C8.99978 7.8318 9.23483 7.92195 9.41255 8.08755L20.0001 18.6735L30.5876 8.08755C30.7653 7.92195 31.0003 7.8318 31.2432 7.83608C31.4861 7.84037 31.7178 7.93876 31.8896 8.11052C32.0613 8.28229 32.1597 8.51402 32.164 8.7569C32.1683 8.99978 32.0782 9.23483 31.9126 9.41255L21.3266 20.0001L31.9126 30.5876Z" fill="#87A7BE"/>
+                </svg>                
+            </button>
+        </div>
+    </div>
+
     <!-- Header start -->
     <div class="bg-[#87A7BE] text-center items-center">
         <p class="text-base font-semibold text-white p-3">Ми працюємо з 08:00 до 21:00 щодня.</p>
@@ -67,12 +114,12 @@
         <div>
             <div class="justify-between items-center text-center hidden lg:flex lg:px-14 lg:py-5">
                 <div class="pr-32 flex gap-2 items-center text-center">
-                    <div class="flex gap-2 font-sans font-medium text-xl items-center">
+                    <button class="flex gap-2 font-sans font-medium text-xl items-center" id="openLocation">
                         <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.7837 3.45937C4.47812 2.75974 5.30406 2.20434 6.21397 1.82517C7.12389 1.44599 8.09981 1.25052 9.08557 1.25C11.0731 1.25 12.9806 2.04375 14.3874 3.45937C15.7964 4.87885 16.5866 6.79809 16.5856 8.79812C16.5856 12.2519 14.6706 15.3781 12.6756 17.6863C11.8349 18.6542 10.9234 19.5584 9.9487 20.3913C9.66688 20.633 9.37908 20.8676 9.08557 21.095C8.79218 20.8675 8.50439 20.6328 8.22245 20.3913C7.24774 19.5584 6.33628 18.6542 5.49557 17.6863C3.50057 15.3781 1.58557 12.2519 1.58557 8.79812C1.58557 6.795 2.37682 4.875 3.7837 3.45937ZM8.72557 22.3856L9.08557 21.875L9.44557 22.3856C9.34014 22.4597 9.21442 22.4994 9.08557 22.4994C8.95672 22.4994 8.83101 22.4597 8.72557 22.3856ZM8.72557 22.3856L9.08557 21.875L9.44557 22.3856L9.44807 22.3844L9.45432 22.38L9.47307 22.3656L9.54682 22.3125C9.60932 22.2663 9.70057 22.1987 9.81557 22.11C10.0456 21.9338 10.3718 21.6744 10.7612 21.3412C11.7833 20.4676 12.7391 19.5191 13.6206 18.5037C15.6881 16.1125 17.8356 12.6994 17.8356 8.7975C17.8356 6.46625 16.9143 4.22875 15.2743 2.57875C14.4637 1.76212 13.4996 1.11387 12.4375 0.671297C11.3754 0.228729 10.2362 0.00058646 9.08557 0C7.93498 0.00050459 6.79584 0.228549 5.73373 0.671009C4.67161 1.11347 3.70748 1.76161 2.89682 2.57812C1.25521 4.2319 0.334469 6.46792 0.335572 8.79812C0.335572 12.6994 2.48307 16.1125 4.55057 18.5037C5.43205 19.5191 6.38781 20.4676 7.40995 21.3412C7.79995 21.6744 8.12557 21.9338 8.35557 22.11C8.46838 22.1969 8.58235 22.2824 8.69745 22.3662L8.71745 22.38L8.72307 22.3844L8.72557 22.3856ZM6.58557 8.75C6.58557 8.08696 6.84896 7.45107 7.31781 6.98223C7.78665 6.51339 8.42253 6.25 9.08557 6.25C9.74861 6.25 10.3845 6.51339 10.8533 6.98223C11.3222 7.45107 11.5856 8.08696 11.5856 8.75C11.5856 9.41304 11.3222 10.0489 10.8533 10.5178C10.3845 10.9866 9.74861 11.25 9.08557 11.25C8.42253 11.25 7.78665 10.9866 7.31781 10.5178C6.84896 10.0489 6.58557 9.41304 6.58557 8.75ZM9.08557 5C8.09101 5 7.13718 5.39509 6.43392 6.09835C5.73066 6.80161 5.33557 7.75544 5.33557 8.75C5.33557 9.74456 5.73066 10.6984 6.43392 11.4017C7.13718 12.1049 8.09101 12.5 9.08557 12.5C10.0801 12.5 11.034 12.1049 11.7372 11.4017C12.4405 10.6984 12.8356 9.74456 12.8356 8.75C12.8356 7.75544 12.4405 6.80161 11.7372 6.09835C11.034 5.39509 10.0801 5 9.08557 5Z" fill="#111111"/>
                         </svg>
                         Київ
-                    </div>
+                    </button>
                     <button class="cursor-pointer" id="openSearch">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -254,12 +301,12 @@
             <h2 class="font-medium text-base pb-4">
                 Знайди себе:
             </h2>
-            <div class="flex gap-3 items-center">
+            <button class="flex gap-3 items-center" id="openLocationMobile">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.36443 4.46006C6.84061 3.96253 7.40696 3.56757 8.03091 3.29793C8.65485 3.02829 9.32405 2.88928 10 2.88891C11.3629 2.88891 12.6709 3.45337 13.6356 4.46006C14.6017 5.46949 15.1436 6.83432 15.1429 8.2566C15.1429 10.7127 13.8297 12.9358 12.4617 14.5772C11.8852 15.2655 11.2602 15.9085 10.5919 16.5008C10.3986 16.6727 10.2013 16.8396 10 17.0013C9.79882 16.8395 9.60148 16.6726 9.40814 16.5008C8.73978 15.9085 8.11477 15.2655 7.53829 14.5772C6.17029 12.9358 4.85714 10.7127 4.85714 8.2566C4.85714 6.83212 5.39971 5.46675 6.36443 4.46006ZM9.75314 17.9191L10 17.5559L10.2469 17.9191C10.1746 17.9717 10.0884 18 10 18C9.91165 18 9.82544 17.9717 9.75314 17.9191ZM9.75314 17.9191L10 17.5559L10.2469 17.9191L10.2486 17.9182L10.2529 17.9151L10.2657 17.9048L10.3163 17.8671C10.3591 17.8342 10.4217 17.7862 10.5006 17.7231C10.6583 17.5977 10.882 17.4133 11.149 17.1764C11.8499 16.5551 12.5053 15.8806 13.1097 15.1585C14.5274 13.4581 16 11.0309 16 8.25616C16 6.59834 15.3683 5.00719 14.2437 3.83382C13.6879 3.25309 13.0268 2.7921 12.2985 2.47738C11.5701 2.16266 10.789 2.00042 10 2C9.21102 2.00036 8.4299 2.16253 7.70159 2.47717C6.97328 2.79182 6.31216 3.25273 5.75629 3.83338C4.63061 5.00942 3.99924 6.59953 4 8.2566C4 11.0309 5.47257 13.4581 6.89029 15.1585C7.49473 15.8806 8.15011 16.5551 8.851 17.1764C9.11843 17.4133 9.34172 17.5977 9.49943 17.7231C9.57678 17.7849 9.65493 17.8456 9.73386 17.9053L9.74757 17.9151L9.75143 17.9182L9.75314 17.9191ZM8.28571 8.22238C8.28571 7.75087 8.46633 7.29867 8.78782 6.96527C9.10931 6.63186 9.54534 6.44455 10 6.44456C10.4547 6.44455 10.8907 6.63186 11.2122 6.96527C11.5337 7.29867 11.7143 7.75087 11.7143 8.22238C11.7143 8.69388 11.5337 9.14608 11.2122 9.47949C10.8907 9.81289 10.4547 10.0002 10 10.0002C9.54534 10.0002 9.10931 9.81289 8.78782 9.47949C8.46633 9.14608 8.28571 8.69388 8.28571 8.22238ZM10 5.55564C9.31802 5.55564 8.66396 5.8366 8.18173 6.33671C7.69949 6.83682 7.42857 7.51512 7.42857 8.22238C7.42857 8.92964 7.69949 9.60793 8.18173 10.108C8.66396 10.6082 9.31802 10.8891 10 10.8891C10.682 10.8891 11.336 10.6082 11.8183 10.108C12.3005 9.60793 12.5714 8.92964 12.5714 8.22238C12.5714 7.51512 12.3005 6.83682 11.8183 6.33671C11.336 5.8366 10.682 5.55564 10 5.55564Z" fill="#111111"/>
                 </svg>
                 <p class="font-sans font-normal text-base">Київ</p>
-            </div>
+            </button>
         </ul>
         <ul class="p-5">
             <h2 class="font-medium text-base pb-4">
@@ -306,7 +353,7 @@
     <div class="bg-[#87A7BE1A] text-center mb-14">
         <div class="flex justify-center p-3">
             <a href="../index.html" class="font-light text-lg">Головна /</a>
-            <p class="font-semibold text-lg">Про нас</p>
+            <p class="font-semibold text-lg ml-1">Про нас</p>
         </div>
     </div>
 
@@ -594,4 +641,5 @@
 <script src="../js/search.js"></script>
 <script src="../js/sidebar.js"></script>
 <script src="../js/helpWindow.js"></script>
+<script src="../js/location.js"></script>
 </html>

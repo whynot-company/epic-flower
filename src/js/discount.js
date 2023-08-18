@@ -43,7 +43,7 @@ async function fetchProductData() {
             productCard.classList.add('text-center', 'items-center', 'mt-5', 'mb-14', 'mr-4', 'cursor-pointer');
             imageContainer.classList.add('relative');
             imageElement.classList.add('pb-6', 'w-full', 'h-full', 'xl:w-full', 'xl:h-full');
-            discounte.classList.add('absolute', 'bottom-8', 'left-2', 'rounded-md', 'font-sans', 'font-medium', 'text-base', 'py-1', 'px-3', 'sm:py-2', 'sm:px-5', 'sm:text-lg', 'xl:px-7', 'xl:py-3', 'xl:text-xl', 'bg-[#DD432E]', 'text-white');
+            discounte.classList.add('absolute', 'bottom-8', 'left-2', 'rounded-md', 'font-sans', 'font-medium', 'text-base', 'py-1', 'px-3', 'sm:py-2', 'sm:px-5', 'sm:text-lg', 'xl:px-5', 'xl:py-2', 'xl:text-xl', 'bg-[#DD432E]', 'text-white');
             titleElement.classList.add( 'xl:w-[220px]', 'font-sans', 'font-normal', 'text-base', 'sm:text-xl', 'pb-2', 'xl:pb-5', 'xl:ml-2');
             priceContainer.classList.add('flex', 'gap-1', 'xl:gap-3', 'text-center', 'items-center', 'pb-6');
             priceElement.classList.add('font-normal', 'text-gray-300', 'text-sm', 'xl:text-lg', 'line-through');
